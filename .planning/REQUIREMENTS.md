@@ -100,21 +100,54 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| MAP-01 bis MAP-07 | Phase 1 | Pending |
-| TML-01 bis TML-06 | Phase 2 | Pending |
-| CHT-01 bis CHT-05 | Phase 3 | Pending |
-| VID-01 bis VID-04 | Phase 4 | Pending |
-| RST-01, RST-02 | Phase 4 | Pending |
-| BKG-01 bis BKG-05 | Phase 5 | Pending |
-| FAQ-01, FAQ-02 | Phase 5 | Pending |
-| SEC-01 bis SEC-05 | Phase 6 | Pending |
-| INF-01 bis INF-06 | Phase 1 + 6 | Pending |
+| INF-01 | Phase 1 | Pending |
+| INF-02 | Phase 1 | Pending |
+| INF-03 | Phase 1 | Pending |
+| INF-04 | Phase 1 | Pending |
+| INF-05 | Phase 1 | Pending |
+| INF-06 | Phase 1 | Pending |
+| MAP-01 | Phase 2 | Pending |
+| MAP-02 | Phase 2 | Pending |
+| MAP-03 | Phase 2 | Pending |
+| MAP-04 | Phase 2 | Pending |
+| MAP-05 | Phase 2 | Pending |
+| MAP-06 | Phase 2 | Pending |
+| MAP-07 | Phase 2 | Pending |
+| TML-01 | Phase 3 | Pending |
+| TML-02 | Phase 3 | Pending |
+| TML-03 | Phase 3 | Pending |
+| TML-04 | Phase 3 | Pending |
+| TML-05 | Phase 3 | Pending |
+| TML-06 | Phase 3 | Pending |
+| CHT-01 | Phase 4 | Pending |
+| CHT-02 | Phase 4 | Pending |
+| CHT-03 | Phase 4 | Pending |
+| CHT-04 | Phase 4 | Pending |
+| CHT-05 | Phase 4 | Pending |
+| VID-01 | Phase 4 | Pending |
+| VID-02 | Phase 4 | Pending |
+| VID-03 | Phase 4 | Pending |
+| VID-04 | Phase 4 | Pending |
+| RST-01 | Phase 4 | Pending |
+| RST-02 | Phase 4 | Pending |
+| BKG-01 | Phase 5 | Pending |
+| BKG-02 | Phase 5 | Pending |
+| BKG-03 | Phase 5 | Pending |
+| BKG-04 | Phase 5 | Pending |
+| BKG-05 | Phase 5 | Pending |
+| FAQ-01 | Phase 5 | Pending |
+| FAQ-02 | Phase 5 | Pending |
+| SEC-01 | Phase 6 | Pending |
+| SEC-02 | Phase 6 | Pending |
+| SEC-03 | Phase 6 | Pending |
+| SEC-04 | Phase 6 | Pending |
+| SEC-05 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 41 total
 - Mapped to phases: 41
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-07-31*
-*Last updated: 2026-07-31 after initial definition*
+*Last updated: 2026-07-31 — Traceability auf 6 Phasen aktualisiert*
