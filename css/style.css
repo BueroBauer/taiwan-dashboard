@@ -1,0 +1,374 @@
+/* css/style.css */
+/* Taiwan Reise-Dashboard — Dark Theme */
+/* Identisch Master Dashboard: #0D0F12, #161A20, #3B82F6 */
+
+/* ============================================================
+   1. CSS Custom Properties
+   ============================================================ */
+
+:root {
+  /* Dark Theme — identisch Master Dashboard */
+  --bg:           #0D0F12;
+  --card:         #161A20;
+  --border:       #1F2937;
+  --accent:       #3B82F6;
+  --accent-hover: #2563EB;
+  --accent-green: #4a9e4a;
+  --yellow:       #e8c547;
+  --text:         #E5E7EB;
+  --muted:        #9CA3AF;
+  --font:         -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  --radius:       14px;
+
+  /* Sticky Nav Höhe — scroll-padding-top muss gleicher Wert sein */
+  --nav-height:   56px;
+
+  /* Phasen-Farben — JS liest via getComputedStyle(root).getPropertyValue('--phase-N') */
+  --phase-1:  #6366F1;  /* Taipei */
+  --phase-2:  #8B5CF6;  /* Hualien */
+  --phase-3:  #EC4899;  /* East Rift Valley */
+  --phase-4:  #F59E0B;  /* Taitung */
+  --phase-5:  #10B981;  /* Xiaoliuqiu */
+  --phase-6:  #06B6D4;  /* Kenting */
+  --phase-7:  #3B82F6;  /* Tainan */
+  --phase-8:  #84CC16;  /* Alishan */
+  --phase-9:  #F97316;  /* Sun Moon Lake */
+  --phase-10: #EF4444;  /* Taipei Rückreise */
+}
+
+/* ============================================================
+   2. Reset
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   3. html + body
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height); /* 56px — muss mit .nav height übereinstimmen */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   4. Sticky Nav
+   ============================================================ */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background-color: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.nav-list::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 1.1rem;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================
+   5. Layout-Helpers
+   ============================================================ */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+section.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.section-subtitle {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* ============================================================
+   6. Card-System
+   ============================================================ */
+
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-meta {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+/* ============================================================
+   7. Grid-System (mobile-first)
+   ============================================================ */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ============================================================
+   8. Hero / Stats-Bar
+   ============================================================ */
+
+.hero {
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   9. Placeholder-Styles
+   ============================================================ */
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+  padding: 3rem 0;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+/* ============================================================
+   10. Passwort-Gate
+   ============================================================ */
+
+.gate-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.gate-box {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  width: min(400px, 90vw);
+  text-align: center;
+}
+
+.gate-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gate-subtitle {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.gate-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: var(--font);
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.gate-input:focus {
+  border-color: var(--accent);
+}
+
+.gate-input.error {
+  border-color: #EF4444;
+}
+
+.gate-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.gate-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.gate-error {
+  color: #EF4444;
+  font-size: 0.8125rem;
+  margin-top: 0.75rem;
+  display: none;
+}
+
+.gate-error.visible {
+  display: block;
+}
+
+/* ============================================================
+   11. Utility-Klassen
+   ============================================================ */
+
+.hidden { display: none !important; }
+.emoji { font-style: normal; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--border);
+  color: var(--text);
+}
+
+.badge-accent  { background-color: var(--accent); color: #fff; }
+.badge-green   { background-color: var(--accent-green); color: #fff; }
+.badge-yellow  { background-color: var(--yellow); color: #0D0F12; }
+.badge-red     { background-color: #EF4444; color: #fff; }
+
+.text-muted    { color: var(--muted); }
+.text-accent   { color: var(--accent); }
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }

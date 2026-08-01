@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Obsidian Sync-Konflikte (WICHTIG — Obsidian Vault)
+*.sync-conflict-*
+
+# Dependencies (falls irgendwann doch npm)
+node_modules/
+package-lock.json
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
