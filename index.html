@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taiwan 2026/27 🇹🇼</title>
+
+  <!-- Eigenes Stylesheet zuerst — verhindert weißen Flash -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+
+  <!-- Passwort-Gate (app.js steuert: lokal = auto-unlock, remote = Gate anzeigen) -->
+  <div id="gate-overlay" class="gate-overlay">
+    <div class="gate-box">
+      <div class="gate-title">🇹🇼 Taiwan 2026/27</div>
+      <div class="gate-subtitle">Reise-Dashboard · Familie</div>
+      <input type="password" id="gate-input" class="gate-input" placeholder="Passwort" autocomplete="off" />
+      <button id="gate-btn" class="gate-btn">Entsperren</button>
+      <div id="gate-error" class="gate-error">Falsches Passwort</div>
+    </div>
+  </div>
+
+  <!-- App-Wrapper — hidden bis Gate gelöst -->
+  <div id="app" class="hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#karte"       class="nav-link">🗺 Karte</a></li>
+        <li><a href="#timeline"    class="nav-link">📅 Timeline</a></li>
+        <li><a href="#zahlen"      class="nav-link">📊 Zahlen</a></li>
+        <li><a href="#videos"      class="nav-link">🎬 Videos</a></li>
+        <li><a href="#restaurants" class="nav-link">🌱 Restaurants</a></li>
+        <li><a href="#booking"     class="nav-link">🏨 Booking</a></li>
+        <li><a href="#fragen"      class="nav-link">❓ Fragen</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="container">
+          <h1 class="hero-title">Taiwan 2026/27 🇹🇼</h1>
+          <p class="hero-subtitle">59 Tage · 10 Phasen · 2 Erw. + Kind 2J · Vegetarisch/vegan</p>
+          <div class="stats-bar">
+            <div class="stat">
+              <span class="stat-value">59 Tage</span>
+              <span class="stat-label">1. Dez – 29. Jan</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">10 Phasen</span>
+              <span class="stat-label">Taipei bis Alishan</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">€9.160–10.860</span>
+              <span class="stat-label">Gesamtbudget</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">~50 Sights</span>
+              <span class="stat-label">Karte + Timeline</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">20 Videos</span>
+              <span class="stat-label">Curated YouTube</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">8 Fragen</span>
+              <span class="stat-label">FAQ Checkliste</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Karte -->
+      <section id="karte" class="section">
+        <div class="container">
+          <h2 class="section-title">Karte</h2>
+          <div id="map" style="height: 500px; border-radius: var(--radius);">
+            <p class="placeholder">Leaflet-Karte · kommt in Phase 2</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Timeline -->
+      <section id="timeline" class="section">
+        <div class="container">
+          <h2 class="section-title">Timeline</h2>
+          <p class="section-subtitle">10 Phasen · 59 Tage · täglich mit Vormittag / Mittagsschlaf / Nachmittag</p>
+          <div id="timeline-content" class="placeholder">Timeline · kommt in Phase 3</div>
+        </div>
+      </section>
+
+      <!-- Section: Zahlen -->
+      <section id="zahlen" class="section">
+        <div class="container">
+          <h2 class="section-title">Zahlen</h2>
+          <div id="charts-content" class="placeholder">Infografiken · kommt in Phase 4</div>
+        </div>
+      </section>
+
+      <!-- Section: Videos -->
+      <section id="videos" class="section">
+        <div class="container">
+          <h2 class="section-title">Videos</h2>
+          <div id="videos-content" class="placeholder">YouTube-Guide · kommt in Phase 4</div>
+        </div>
+      </section>
+
+      <!-- Section: Restaurants -->
+      <section id="restaurants" class="section">
+        <div class="container">
+          <h2 class="section-title">Restaurants</h2>
+          <p class="section-subtitle">Vegetarisch + vegan in Taiwan · nach Phase gefiltert</p>
+          <div id="restaurants-content" class="placeholder">Restaurant-Guide · kommt in Phase 4</div>
+        </div>
+      </section>
+
+      <!-- Section: Booking -->
+      <section id="booking" class="section">
+        <div class="container">
+          <h2 class="section-title">Booking</h2>
+          <div id="booking-content" class="placeholder">Hotel-Research + KKday-Touren · kommt in Phase 5</div>
+        </div>
+      </section>
+
+      <!-- Section: Fragen -->
+      <section id="fragen" class="section">
+        <div class="container">
+          <h2 class="section-title">Offene Fragen</h2>
+          <div id="faq-content" class="placeholder">8 offene Fragen · kommt in Phase 5</div>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- /#app -->
+
+  <!-- Scripts — KEIN type="module" (CORS bei file://)
+       Reihenfolge: data.js → map.js → charts.js → app.js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
