@@ -1,3 +1,18 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+current_phase: 2 — Leaflet-Karte
+current_plan: 1 of 3
+status: In Progress
+last_updated: "2026-08-01T10:12:00.000Z"
+progress:
+  total_phases: 6
+  completed_phases: 1
+  total_plans: 3
+  completed_plans: 3
+---
+
 # STATE: Taiwan Reise-Dashboard
 
 **Last updated:** 2026-07-31
@@ -15,13 +30,14 @@
 
 ## Current Position
 
-**Current Phase:** 1 — Projekt-Fundament
-**Current Plan:** TBD (Phase not yet planned)
-**Status:** Not started
+**Current Phase:** 2 — Leaflet-Karte (nächste Phase)
+**Current Plan:** Phase 1 abgeschlossen (3/3 Pläne)
+**Status:** Phase 1 complete — ready for Phase 2
 
 **Progress:**
+
 ```
-Phase 1 [          ] 0%
+Phase 1 [██████████] 100% ✓
 Phase 2 [          ] 0%
 Phase 3 [          ] 0%
 Phase 4 [          ] 0%
@@ -29,7 +45,7 @@ Phase 5 [          ] 0%
 Phase 6 [          ] 0%
 ```
 
-**Overall:** 0/6 phases complete
+**Overall:** 1/6 phases complete
 
 ---
 
@@ -40,8 +56,8 @@ Phase 6 [          ] 0%
 | Phases total | 6 |
 | Requirements total | 41 |
 | Requirements complete | 0 |
-| Plans created | 0 |
-| Plans complete | 0 |
+| Plans created | 3 |
+| Plans complete | 3 |
 
 ---
 
@@ -82,7 +98,9 @@ taiwan-dashboard/
 
 ### Todos
 
-- [ ] Phase 1 planen (`/gsd-plan-phase 1`)
+- [ ] Phase 2 starten: Leaflet-Karte mit Route + Sight-Pins
+- [ ] YouTube-IDs für 20 Videos eintragen (js/data.js)
+- [ ] Beispiel-Hotels pro Phase eintragen (js/data.js booking[].exampleHotels)
 
 ### Blockers
 
@@ -92,5 +110,5 @@ taiwan-dashboard/
 
 ## Session Continuity
 
-**Last session:** 2026-07-31 — Projektinitialisierung, Requirements definiert, Roadmap erstellt
-**Resume with:** `/gsd-plan-phase 1`
+**Last session:** 2026-07-31 (Phase 1 Ausführung) — App-Shell, Dark Theme, data.js Skelett, git tag v0.1.0
+**Resume with:** `/gsd-execute-phase 2` oder Phase 2 planen via `/gsd-plan-phase 2`

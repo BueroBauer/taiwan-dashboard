@@ -9,7 +9,7 @@
 
 ## Phases
 
-- [ ] **Phase 1: Projekt-Fundament** — Git-Repo, Dateistruktur, data.js-Skelett, Dark Theme, Sticky Nav
+- [x] **Phase 1: Projekt-Fundament** — Git-Repo, Dateistruktur, data.js-Skelett, Dark Theme, Sticky Nav ✓ v0.1.0
 - [ ] **Phase 2: Karte** — Leaflet-Karte mit ~50 Pins, Route, Tagesausflug-Differenzierung, Filter, Cluster
 - [ ] **Phase 3: Timeline** — 10 Phasen-Cards mit aufklappbaren Tages-Slots, Jetlag-Anpassung, Badges
 - [ ] **Phase 4: Infografiken + Videos + Restaurants** — 5 Chart.js-Charts, YouTube-Grid, Restaurant-Guide
