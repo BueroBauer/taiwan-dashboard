@@ -348,6 +348,284 @@ section.section:last-child {
 .hidden { display: none !important; }
 .emoji { font-style: normal; }
 
+/* ============================================================
+   12. Timeline — Phase 3
+   TML-01 bis TML-06
+   ============================================================ */
+
+/* Phase-Card */
+.tl-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  border-left: 3px solid var(--phase-color, var(--accent));
+}
+
+.tl-card--open .tl-chevron {
+  transform: rotate(180deg);
+}
+
+/* Header */
+.tl-card-header {
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+  user-select: none;
+  gap: 0;
+  transition: background-color 0.15s;
+}
+
+.tl-card-header:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+.tl-card-header:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.tl-phase-bar {
+  width: 4px;
+  background-color: var(--phase-color, var(--accent));
+  flex-shrink: 0;
+}
+
+.tl-header-content {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  min-width: 0;
+}
+
+.tl-header-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.tl-phase-emoji {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.tl-phase-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+}
+
+.tl-chevron {
+  font-size: 0.75rem;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.tl-dates {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.tl-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.tl-highlight-tag {
+  font-size: 0.75rem;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.2rem 0.6rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Card Body */
+.tl-card-body {
+  border-top: 1px solid var(--border);
+}
+
+/* Day */
+.tl-day {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tl-day:last-child {
+  border-bottom: none;
+}
+
+.tl-day-header {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Slots */
+.tl-slot {
+  margin-bottom: 0.75rem;
+}
+
+.tl-slot:last-child {
+  margin-bottom: 0;
+}
+
+.tl-slot-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.tl-slot--nap .tl-slot-label {
+  color: #6B7280;
+}
+
+.tl-nap-block {
+  font-size: 0.8125rem;
+  color: #4B5563;
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-style: italic;
+}
+
+.tl-slot-empty {
+  font-size: 0.8125rem;
+  color: #374151;
+  font-style: italic;
+}
+
+/* Sight List */
+.tl-sight-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tl-sight {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.tl-sight-name {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tl-sight-name:hover {
+  text-decoration: underline;
+}
+
+.tl-sight-tip {
+  width: 100%;
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding-left: 0.25rem;
+}
+
+/* Badges */
+.tl-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.tl-badge--nights {
+  background-color: rgba(59,130,246,0.15);
+  color: #93C5FD;
+  border: 1px solid rgba(59,130,246,0.25);
+}
+
+.tl-badge--warn {
+  background-color: rgba(239,68,68,0.12);
+  color: #FCA5A5;
+  border: 1px solid rgba(239,68,68,0.2);
+}
+
+.tl-badge--open-q {
+  background-color: rgba(245,158,11,0.12);
+  color: #FCD34D;
+  border: 1px solid rgba(245,158,11,0.2);
+}
+
+.tl-badge--jetlag {
+  background-color: rgba(139,92,246,0.15);
+  color: #C4B5FD;
+  border: 1px solid rgba(139,92,246,0.2);
+}
+
+.tl-badge--gratis {
+  background-color: rgba(74,158,74,0.15);
+  color: #86EFAC;
+  border: 1px solid rgba(74,158,74,0.2);
+}
+
+.tl-badge--price {
+  background-color: rgba(245,158,11,0.1);
+  color: #FCD34D;
+  border: 1px solid rgba(245,158,11,0.15);
+}
+
+.tl-badge--buggy {
+  background-color: rgba(239,68,68,0.1);
+  color: #FCA5A5;
+  border: 1px solid rgba(239,68,68,0.15);
+  font-size: 0.7rem;
+}
+
+.tl-badge--buggy-ok {
+  background-color: rgba(74,158,74,0.08);
+  color: #6EE7B7;
+  border: 1px solid rgba(74,158,74,0.12);
+  font-size: 0.7rem;
+}
+
+.tl-badge--special {
+  background-color: rgba(251,191,36,0.12);
+  color: #FDE68A;
+  border: 1px solid rgba(251,191,36,0.2);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .tl-header-content {
+    padding: 0.875rem 1rem;
+  }
+  .tl-phase-name {
+    font-size: 0.9375rem;
+  }
+  .tl-day {
+    padding: 0.875rem 1rem;
+  }
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
