@@ -372,3 +372,179 @@ section.section:last-child {
 .mt-2 { margin-top: 0.5rem; }
 .mt-4 { margin-top: 1rem; }
 .mb-4 { margin-bottom: 1rem; }
+
+/* ============================================================
+   Phase 2 — Leaflet-Karte
+   ============================================================ */
+
+/* Karte */
+#map {
+  height: 560px;
+  border-radius: var(--radius);
+  background: var(--card);
+  z-index: 0;
+}
+
+/* Filter-Button-Leiste */
+#map-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.map-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.map-filter-btn.active {
+  background: var(--border);
+  color: var(--text);
+  border-color: transparent;
+}
+
+.map-filter-all.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.filter-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Phase-Basis-Marker (nummerierter Kreis) */
+.phase-base-marker {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Rauten-Marker für Daytips */
+.map-diamond-icon .diamond {
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border: 2px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Cluster-Icon */
+.cluster-icon-wrapper {
+  background: transparent !important;
+  border: none !important;
+}
+
+.cluster-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.85);
+  border: 2px solid rgba(255,255,255,0.7);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Leaflet Popups — Dark Theme */
+.leaflet-popup-content-wrapper {
+  background: var(--card, #161A20) !important;
+  border: 1px solid var(--border, #1F2937) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
+  color: var(--text, #E5E7EB) !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--card, #161A20) !important;
+}
+
+.leaflet-popup-close-button {
+  color: var(--muted, #9CA3AF) !important;
+}
+
+.map-popup {
+  min-width: 180px;
+  max-width: 240px;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.popup-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: var(--text, #E5E7EB);
+}
+
+.popup-price {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--accent, #3B82F6);
+  font-weight: 600;
+}
+
+.popup-price.free {
+  color: #4ade80;
+}
+
+.popup-price small {
+  font-weight: 400;
+  color: var(--muted, #9CA3AF);
+}
+
+.popup-tip {
+  font-size: 0.76rem;
+  color: var(--muted, #9CA3AF);
+  margin-bottom: 0.4rem;
+}
+
+.popup-question {
+  font-size: 0.76rem;
+  color: #F59E0B;
+  margin-bottom: 0.4rem;
+}
+
+.popup-gmaps-btn {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  background: var(--accent, #3B82F6);
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.popup-gmaps-btn:hover {
+  background: var(--accent-hover, #2563EB);
+}

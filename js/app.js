@@ -102,6 +102,9 @@
   document.addEventListener('DOMContentLoaded', function() {
     initGate();
     initNav();
+    if (window.mapModule) {
+      window.mapModule.init();
+    }
   });
 
 })();
