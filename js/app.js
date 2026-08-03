@@ -296,6 +296,8 @@
     if (window.chartsModule)      { window.chartsModule.init(); }
     if (window.videosModule)      { window.videosModule.init(); }
     if (window.restaurantsModule) { window.restaurantsModule.init(); }
+    if (window.bookingModule)     { window.bookingModule.init(); }
+    if (window.faqModule)         { window.faqModule.init(); }
     renderTimeline();
   });
 
