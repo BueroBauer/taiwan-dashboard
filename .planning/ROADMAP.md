@@ -15,6 +15,8 @@
 - [x] **Phase 4: Infografiken + Videos + Restaurants** — 5 Chart.js-Charts, YouTube-Grid, Restaurant-Guide (completed 2026-08-03)
 - [ ] **Phase 5: Booking + Offene Fragen** — Hotel-Links, KKday-Touren, FAQ-Checkliste mit Status
 - [ ] **Phase 6: Auth + Deployment** — Passwort-Gate, GitHub Pages, automatisches Deployment
+- [ ] **Phase 7: Datenkorrekturen** — Temperaturen Timeline, realistische Tageszeiten, Maps-Links, YouTube-UX
+- [ ] **Phase 8: Deploy ohne Auth** — GitHub Repo + GitHub Pages live schalten
 
 ---
 
@@ -32,8 +34,8 @@
   5. App ist responsive (Desktop + Mobile) ohne Content
 **Plans**: 3 plans
 Plans:
-- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
-- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [x] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [x] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
 - [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 **UI hint**: yes
 
@@ -119,6 +121,31 @@ Plans:
 - [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
 - [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 
+### Phase 7: Datenkorrekturen
+**Goal**: Timeline zeigt Durchschnittstemperatur pro Phase; alle Tagesaktivitäten respektieren 07:30–19:00 Familienrhythmus; Google Maps Links öffnen Ortssuche statt nackte Koordinaten; YouTube-Placeholder-Cards zeigen Suchlink klar an
+**Depends on**: Phase 1
+**Requirements**: DAT-01, DAT-02, DAT-03, DAT-04
+**Success Criteria**:
+  1. Jede Timeline-Phase-Card zeigt avgTemp (z.B. "🌡 23°C Ø")
+  2. Keine Aktivität vor 07:30 oder nach 19:00 in data.js
+  3. Alle googleMapsUrl in sights/restaurants nutzen `maps.google.com/maps/search/?q=Name+Ort` Format
+  4. YouTube-Placeholder-Cards zeigen "🔍 Suchen" Label statt unsichtbaren Play-Button
+**Plans**: 2 plans
+Plans:
+- [ ] 07-01-PLAN.md — data.js: avgTemp + Zeitbereinigung + Maps-URLs
+- [ ] 07-02-PLAN.md — app.js + videos.js + css: avgTemp-Badge + Placeholder-Label
+
+### Phase 8: Deploy ohne Auth
+**Goal**: App ist öffentlich auf GitHub Pages erreichbar unter BueroBauer.github.io/taiwan-dashboard
+**Depends on**: Phase 1–7
+**Requirements**: DEP-01, DEP-02
+**Success Criteria**:
+  1. `gh repo create BueroBauer/taiwan-dashboard` erfolgreich, Code gepusht
+  2. GitHub Pages aktiviert (Branch main, Root /), App nach < 5 Min erreichbar
+**Plans**: 1 plan
+Plans:
+- [ ] 08-01-PLAN.md — GitHub Repo erstellen + Push + Pages aktivieren
+
 ---
 
 ## Progress Table
@@ -129,7 +156,7 @@ Plans:
 | 2. Karte | 0/? | Not started | - |
 | 3. Timeline | 0/? | Not started | - |
 | 4. Infografiken + Videos + Restaurants | 4/4 | Complete   | 2026-08-03 |
-| 5. Booking + Offene Fragen | 0/? | Not started | - |
+| 5. Booking + Offene Fragen | 2/3 | In Progress|  |
 | 6. Auth + Deployment | 0/? | Not started | - |
 
 ---
