@@ -1,0 +1,120 @@
+// js/videos.js
+// YouTube-Video-Grid mit Tab-Filter und Lazy-Load
+// ES5 — kein const/let, keine Arrow Functions, keine Template Literals
+
+window.videosModule = (function () {
+  'use strict';
+
+  var _currentCat = 'alle';
+
+  function _getCategories() {
+    var cats = [];
+    var videos = window.TAIWAN.videos;
+    for (var i = 0; i < videos.length; i++) {
+      var vcats = videos[i].categories;
+      for (var j = 0; j < vcats.length; j++) {
+        if (cats.indexOf(vcats[j]) === -1) {
+          cats.push(vcats[j]);
+        }
+      }
+    }
+    return cats;
+  }
+
+  function _renderTabs(container) {
+    var cats = _getCategories();
+    var all = ['alle'].concat(cats);
+    var html = '<div class="vid-tabs">';
+    for (var i = 0; i < all.length; i++) {
+      var cat = all[i];
+      var active = cat === _currentCat ? ' vid-tab--active' : '';
+      html += '<button class="vid-tab' + active + '" data-cat="' + cat + '">' + cat + '</button>';
+    }
+    html += '</div>';
+    container.insertAdjacentHTML('beforeend', html);
+  }
+
+  function _makeCard(video) {
+    var isPlaceholder = video.youtubeId.indexOf('PLACEHOLDER') !== -1;
+    var thumbHtml;
+    if (isPlaceholder) {
+      thumbHtml = '<div class="vid-thumb-placeholder"></div>';
+    } else {
+      thumbHtml = '<img class="vid-thumb" src="https://img.youtube.com/vi/' + video.youtubeId + '/hqdefault.jpg" alt="' + video.title + '" loading="lazy" />';
+    }
+    return '<div class="vid-card" data-youtube-id="' + video.youtubeId + '">' +
+      '<div class="vid-thumb-wrap">' +
+        thumbHtml +
+        '<div class="vid-play-btn" aria-label="Video abspielen">\u25B6</div>' +
+      '</div>' +
+      '<div class="vid-title">' + video.title + '</div>' +
+    '</div>';
+  }
+
+  function _renderGrid(container, cat) {
+    var old = container.querySelector('.vid-grid');
+    if (old) {
+      old.parentNode.removeChild(old);
+    }
+    var videos = window.TAIWAN.videos;
+    var filtered = [];
+    for (var i = 0; i < videos.length; i++) {
+      if (cat === 'alle' || videos[i].categories.indexOf(cat) !== -1) {
+        filtered.push(videos[i]);
+      }
+    }
+    var html = '<div class="vid-grid">';
+    for (var j = 0; j < filtered.length; j++) {
+      html += _makeCard(filtered[j]);
+    }
+    html += '</div>';
+    container.insertAdjacentHTML('beforeend', html);
+  }
+
+  function _bindEvents(container) {
+    container.addEventListener('click', function (e) {
+      // Tab-Click
+      var tab = e.target.closest('.vid-tab');
+      if (tab) {
+        _currentCat = tab.getAttribute('data-cat');
+        var allTabs = container.querySelectorAll('.vid-tab');
+        Array.prototype.forEach.call(allTabs, function (t) {
+          t.classList.remove('vid-tab--active');
+        });
+        tab.classList.add('vid-tab--active');
+        _renderGrid(container, _currentCat);
+        return;
+      }
+
+      // Card-Click: Lazy iframe oder YouTube-Suche
+      var card = e.target.closest('[data-youtube-id]');
+      if (!card) { return; }
+      var id = card.getAttribute('data-youtube-id');
+
+      if (id.indexOf('PLACEHOLDER') !== -1) {
+        var titleEl = card.querySelector('.vid-title');
+        var q = titleEl ? titleEl.textContent : 'Taiwan';
+        window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(q), '_blank');
+        return;
+      }
+
+      var wrap = card.querySelector('.vid-thumb-wrap');
+      if (!wrap) { return; }
+      wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id +
+        '?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    });
+  }
+
+  return {
+    init: function () {
+      if (!window.TAIWAN || !window.TAIWAN.videos) { return; }
+      var el = document.getElementById('videos-content');
+      if (!el) { return; }
+      el.innerHTML = '';
+      _renderTabs(el);
+      _renderGrid(el, 'alle');
+      _bindEvents(el);
+      console.log('[videos.js] initialisiert');
+    }
+  };
+})();
