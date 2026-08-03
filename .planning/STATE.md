@@ -5,13 +5,13 @@ milestone_name: milestone
 current_phase: 2 — Leaflet-Karte (nächste Phase)
 current_plan: Phase 1 abgeschlossen (3/3 Pläne)
 status: executing
-last_updated: "2026-08-03T15:56:09.729Z"
+last_updated: "2026-08-03T16:23:27.430Z"
 progress:
   total_phases: 6
   completed_phases: 2
-  total_plans: 5
+  total_plans: 8
   completed_plans: 6
-  percent: 100
+  percent: 75
 ---
 
 # STATE: Taiwan Reise-Dashboard
