@@ -30,7 +30,11 @@
   3. `js/data.js` enthält alle 10 Reisephasen, ~50 Sights, Restaurants, Videos, Booking-Daten, FAQ — strukturiert und kommentiert
   4. CHANGELOG.md vorhanden, .gitignore korrekt, README.md mit Setup-Anleitung
   5. App ist responsive (Desktop + Mobile) ohne Content
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 **UI hint**: yes
 
 ### Phase 2: Karte
@@ -43,7 +47,11 @@
   3. Tagesausflüge erscheinen als Rauten-Pin mit gestrichelter Linie zum Phasen-Base; Mehrtagesausflüge als Mini-Polyline
   4. Phasen-Filter-Buttons 1–10 togglen Pins korrekt ein/aus
   5. Bei Zoom-out clustert MarkerCluster automatisch
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 **UI hint**: yes
 
 ### Phase 3: Timeline
@@ -56,7 +64,11 @@
   3. Phase 1 Taipei zeigt Jetlag-Anpassung (Tag 1–3 mit verschobenen Slots)
   4. Sights pro Slot zeigen Name, Preis, Buggy-Icon, klickbaren Google-Maps-Link
   5. Kind-Badges (Heißquellen-Warnung, Schildkröten, GRATIS, SILVESTER) und Offene-Fragen-Badge erscheinen korrekt
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 **UI hint**: yes
 
 ### Phase 4: Infografiken + Videos + Restaurants
@@ -86,7 +98,11 @@
   3. Xiaoliuqiu, Alishan, Kenting zeigen Warn-Badge (Silvester = früh buchen)
   4. KKday-Links für Glasbodenboot, Alishan, etc. öffnen korrekt
   5. 8 offene Fragen erscheinen als Checkliste mit 🔴/🟢 Status; Status-Änderung in data.js spiegelt sich beim Reload
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 
 ### Phase 6: Auth + Deployment
 **Goal**: Die App ist passwortgeschützt auf GitHub Pages erreichbar, lokal ohne Passwort-Eingabe nutzbar, und deployed automatisch bei jedem Push
@@ -97,7 +113,11 @@
   2. GitHub Pages (markintosh.github.io/taiwan-dashboard): Passwort-Gate erscheint, korrekte Eingabe öffnet App und speichert Session in localStorage
   3. Falsches Passwort zeigt Fehlermeldung, App bleibt gesperrt
   4. `git push main` triggert automatisches GitHub Pages Deployment — Änderungen live nach < 2 Minuten
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — booking.js: Hotel-Cards + KKday-Touren pro Phase
+- [ ] 05-02-PLAN.md — faq.js: FAQ-Checkliste mit Status-Icons
+- [ ] 05-03-PLAN.md — Integration: Script-Tags, app.js init-Aufrufe, FAQ-CSS
 
 ---
 
