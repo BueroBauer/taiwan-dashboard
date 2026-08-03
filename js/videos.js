@@ -11,11 +11,9 @@ window.videosModule = (function () {
     var cats = [];
     var videos = window.TAIWAN.videos;
     for (var i = 0; i < videos.length; i++) {
-      var vcats = videos[i].categories;
-      for (var j = 0; j < vcats.length; j++) {
-        if (cats.indexOf(vcats[j]) === -1) {
-          cats.push(vcats[j]);
-        }
+      var vcat = videos[i].category;
+      if (vcat && cats.indexOf(vcat) === -1) {
+        cats.push(vcat);
       }
     }
     return cats;
@@ -59,7 +57,7 @@ window.videosModule = (function () {
     var videos = window.TAIWAN.videos;
     var filtered = [];
     for (var i = 0; i < videos.length; i++) {
-      if (cat === 'alle' || videos[i].categories.indexOf(cat) !== -1) {
+      if (cat === 'alle' || videos[i].category === cat) {
         filtered.push(videos[i]);
       }
     }
