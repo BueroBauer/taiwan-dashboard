@@ -867,7 +867,17 @@ window.TAIWAN = {
       bookingUrl: "https://www.booking.com/searchresults.de.html?ss=Taipei&checkin=2026-12-01&checkout=2026-12-03&group_adults=2&group_children=1&age=2",
       airbnbUrl:  "https://www.airbnb.com/s/Taipei/homes?checkin=2026-12-01&checkout=2026-12-03&adults=2&children=1",
       criteria: { maxDistanceMetro: 500, buggyAccessible: true, notes: "Nähe MRT Station, keine Treppen zum Zimmer" },
-      exampleHotels: [],
+      exampleHotels: [
+        {
+          name: "Star Hostel Taipei East",
+          type: "Hostel",
+          pricePerNight: { eur: 30, note: "ca. TWD 1.100/Nacht, Privatzimmer" },
+          rating: 9.0,
+          highlights: ["Frühstück inklusive", "MRT Zhongxiao Dunhua 5 Min", "sehr sauber", "Da'an District"],
+          bookingUrl: "https://www.booking.com/hotel/tw/star-hostel-east.de.html?checkin=2026-12-01&checkout=2026-12-03&group_adults=2&group_children=1&age=2",
+          address: "Zhongxiao East Road Sec. 4, Da'an District, Taipei"
+        }
+      ],
       kkdayToursPhase: []
     },
     {
