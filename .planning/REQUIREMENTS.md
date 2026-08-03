@@ -34,15 +34,15 @@
 
 ### Videos
 
-- [ ] **VID-01**: 20 YouTube-Videos in Kategorien-Tabs (Ostküste, Kenting, Tempel, Xiaoliuqiu, Familie, Deutsch, Transport, Alle)
-- [ ] **VID-02**: Video-Cards: Thumbnail via YouTube-URL, Titel, klickbarer Link
-- [ ] **VID-03**: Grid 3-spaltig Desktop, Stack Mobile
-- [ ] **VID-04**: Tab-Strip Desktop horizontal, Mobile: ein Tab pro Zeile
+- [x] **VID-01**: 20 YouTube-Videos in Kategorien-Tabs (Ostküste, Kenting, Tempel, Xiaoliuqiu, Familie, Deutsch, Transport, Alle)
+- [x] **VID-02**: Video-Cards: Thumbnail via YouTube-URL, Titel, klickbarer Link
+- [x] **VID-03**: Grid 3-spaltig Desktop, Stack Mobile
+- [x] **VID-04**: Tab-Strip Desktop horizontal, Mobile: ein Tab pro Zeile
 
 ### Restaurants
 
-- [ ] **RST-01**: Restaurant-Cards mit Name, Typ, Preis, 🌱-Symbol, Google-Maps-Link
-- [ ] **RST-02**: Filter nach Phase/Region
+- [x] **RST-01**: Restaurant-Cards mit Name, Typ, Preis, 🌱-Symbol, Google-Maps-Link
+- [x] **RST-02**: Filter nach Phase/Region
 
 ### Booking
 
@@ -124,12 +124,12 @@
 | CHT-03 | Phase 4 | Complete |
 | CHT-04 | Phase 4 | Complete |
 | CHT-05 | Phase 4 | Complete |
-| VID-01 | Phase 4 | Pending |
-| VID-02 | Phase 4 | Pending |
-| VID-03 | Phase 4 | Pending |
-| VID-04 | Phase 4 | Pending |
-| RST-01 | Phase 4 | Pending |
-| RST-02 | Phase 4 | Pending |
+| VID-01 | Phase 4 | Complete |
+| VID-02 | Phase 4 | Complete |
+| VID-03 | Phase 4 | Complete |
+| VID-04 | Phase 4 | Complete |
+| RST-01 | Phase 4 | Complete |
+| RST-02 | Phase 4 | Complete |
 | BKG-01 | Phase 5 | Pending |
 | BKG-02 | Phase 5 | Pending |
 | BKG-03 | Phase 5 | Pending |

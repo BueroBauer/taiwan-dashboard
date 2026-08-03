@@ -12,7 +12,7 @@
 - [x] **Phase 1: Projekt-Fundament** — Git-Repo, Dateistruktur, data.js-Skelett, Dark Theme, Sticky Nav ✓ v0.1.0
 - [ ] **Phase 2: Karte** — Leaflet-Karte mit ~50 Pins, Route, Tagesausflug-Differenzierung, Filter, Cluster
 - [ ] **Phase 3: Timeline** — 10 Phasen-Cards mit aufklappbaren Tages-Slots, Jetlag-Anpassung, Badges
-- [ ] **Phase 4: Infografiken + Videos + Restaurants** — 5 Chart.js-Charts, YouTube-Grid, Restaurant-Guide
+- [x] **Phase 4: Infografiken + Videos + Restaurants** — 5 Chart.js-Charts, YouTube-Grid, Restaurant-Guide (completed 2026-08-03)
 - [ ] **Phase 5: Booking + Offene Fragen** — Hotel-Links, KKday-Touren, FAQ-Checkliste mit Status
 - [ ] **Phase 6: Auth + Deployment** — Passwort-Gate, GitHub Pages, automatisches Deployment
 
@@ -72,8 +72,8 @@
 **Plans**: 4 Plans
 - [x] 04-01-PLAN.md — charts.js: 4 Chart.js-Visualisierungen + Budget-Counter
 - [x] 04-02-PLAN.md — videos.js: YouTube-Tab-Grid mit Lazy-Load
-- [ ] 04-03-PLAN.md — restaurants.js: Restaurant-Cards + Phasen-Filter
-- [ ] 04-04-PLAN.md — Integration: index.html + app.js + css
+- [x] 04-03-PLAN.md — restaurants.js: Restaurant-Cards + Phasen-Filter
+- [x] 04-04-PLAN.md — Integration: index.html + app.js + css
 **UI hint**: yes
 
 ### Phase 5: Booking + Offene Fragen
@@ -108,7 +108,7 @@
 | 1. Projekt-Fundament | 0/? | Not started | - |
 | 2. Karte | 0/? | Not started | - |
 | 3. Timeline | 0/? | Not started | - |
-| 4. Infografiken + Videos + Restaurants | 2/4 | In Progress|  |
+| 4. Infografiken + Videos + Restaurants | 4/4 | Complete   | 2026-08-03 |
 | 5. Booking + Offene Fragen | 0/? | Not started | - |
 | 6. Auth + Deployment | 0/? | Not started | - |
 
