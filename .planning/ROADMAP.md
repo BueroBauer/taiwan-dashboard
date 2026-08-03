@@ -69,7 +69,11 @@
   3. Budget-Counter zeigt €130–150/Tag Komfort vs. €29 Backpacker-Realität
   4. 20 YouTube-Videos erscheinen in Kategorien-Tabs (8 Kategorien), als 3-spaltiges Grid Desktop / Stack Mobile
   5. Restaurant-Cards zeigen Name, Typ, Preis, Vegan-Symbol, Google-Maps-Link; Filter nach Phase funktioniert
-**Plans**: TBD
+**Plans**: 4 Plans
+- [ ] 04-01-PLAN.md — charts.js: 4 Chart.js-Visualisierungen + Budget-Counter
+- [ ] 04-02-PLAN.md — videos.js: YouTube-Tab-Grid mit Lazy-Load
+- [ ] 04-03-PLAN.md — restaurants.js: Restaurant-Cards + Phasen-Filter
+- [ ] 04-04-PLAN.md — Integration: index.html + app.js + css
 **UI hint**: yes
 
 ### Phase 5: Booking + Offene Fragen
