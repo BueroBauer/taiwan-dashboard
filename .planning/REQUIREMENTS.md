@@ -26,11 +26,11 @@
 
 ### Infografiken
 
-- [ ] **CHT-01**: Donut-Chart Kostenverteilung (Flug 44%, Unterkunft 42%, Essen 12%, Transport 3%, Eintritte 4%, Mietwagen 5%)
-- [ ] **CHT-02**: Balkendiagramm Zeitverteilung (Nächte pro Phase, farbcodiert)
-- [ ] **CHT-03**: Line-Chart Temperaturkurve (Min/Max pro Phase, Alishan-Kälteeinbruch sichtbar)
-- [ ] **CHT-04**: Scatter-Chart Eintritte (Kosten pro Sight, Gratis-Anteil hervorheben ~65%)
-- [ ] **CHT-05**: Budget-Counter (€130–150/Tag Komfort vs. €29 Backpacker-Realität)
+- [x] **CHT-01**: Donut-Chart Kostenverteilung (Flug 44%, Unterkunft 42%, Essen 12%, Transport 3%, Eintritte 4%, Mietwagen 5%)
+- [x] **CHT-02**: Balkendiagramm Zeitverteilung (Nächte pro Phase, farbcodiert)
+- [x] **CHT-03**: Line-Chart Temperaturkurve (Min/Max pro Phase, Alishan-Kälteeinbruch sichtbar)
+- [x] **CHT-04**: Scatter-Chart Eintritte (Kosten pro Sight, Gratis-Anteil hervorheben ~65%)
+- [x] **CHT-05**: Budget-Counter (€130–150/Tag Komfort vs. €29 Backpacker-Realität)
 
 ### Videos
 
@@ -119,11 +119,11 @@
 | TML-04 | Phase 3 | Pending |
 | TML-05 | Phase 3 | Pending |
 | TML-06 | Phase 3 | Pending |
-| CHT-01 | Phase 4 | Pending |
-| CHT-02 | Phase 4 | Pending |
-| CHT-03 | Phase 4 | Pending |
-| CHT-04 | Phase 4 | Pending |
-| CHT-05 | Phase 4 | Pending |
+| CHT-01 | Phase 4 | Complete |
+| CHT-02 | Phase 4 | Complete |
+| CHT-03 | Phase 4 | Complete |
+| CHT-04 | Phase 4 | Complete |
+| CHT-05 | Phase 4 | Complete |
 | VID-01 | Phase 4 | Pending |
 | VID-02 | Phase 4 | Pending |
 | VID-03 | Phase 4 | Pending |

@@ -70,8 +70,8 @@
   4. 20 YouTube-Videos erscheinen in Kategorien-Tabs (8 Kategorien), als 3-spaltiges Grid Desktop / Stack Mobile
   5. Restaurant-Cards zeigen Name, Typ, Preis, Vegan-Symbol, Google-Maps-Link; Filter nach Phase funktioniert
 **Plans**: 4 Plans
-- [ ] 04-01-PLAN.md — charts.js: 4 Chart.js-Visualisierungen + Budget-Counter
-- [ ] 04-02-PLAN.md — videos.js: YouTube-Tab-Grid mit Lazy-Load
+- [x] 04-01-PLAN.md — charts.js: 4 Chart.js-Visualisierungen + Budget-Counter
+- [x] 04-02-PLAN.md — videos.js: YouTube-Tab-Grid mit Lazy-Load
 - [ ] 04-03-PLAN.md — restaurants.js: Restaurant-Cards + Phasen-Filter
 - [ ] 04-04-PLAN.md — Integration: index.html + app.js + css
 **UI hint**: yes
@@ -108,7 +108,7 @@
 | 1. Projekt-Fundament | 0/? | Not started | - |
 | 2. Karte | 0/? | Not started | - |
 | 3. Timeline | 0/? | Not started | - |
-| 4. Infografiken + Videos + Restaurants | 0/? | Not started | - |
+| 4. Infografiken + Videos + Restaurants | 2/4 | In Progress|  |
 | 5. Booking + Offene Fragen | 0/? | Not started | - |
 | 6. Auth + Deployment | 0/? | Not started | - |
 
