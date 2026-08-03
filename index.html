@@ -102,7 +102,35 @@
       <section id="zahlen" class="section">
         <div class="container">
           <h2 class="section-title">Zahlen</h2>
-          <div id="charts-content" class="placeholder">Infografiken · kommt in Phase 4</div>
+          <div id="charts-content">
+            <div class="chart-grid">
+              <div class="chart-card">
+                <h3 class="chart-title">Kostenverteilung</h3>
+                <div class="chart-container" style="position:relative;height:300px">
+                  <canvas id="chart-costs"></canvas>
+                </div>
+              </div>
+              <div class="chart-card">
+                <h3 class="chart-title">N&#228;chte pro Phase</h3>
+                <div class="chart-container" style="position:relative;height:300px">
+                  <canvas id="chart-nights"></canvas>
+                </div>
+              </div>
+              <div class="chart-card">
+                <h3 class="chart-title">Temperaturen (Min/Max)</h3>
+                <div class="chart-container" style="position:relative;height:300px">
+                  <canvas id="chart-temp"></canvas>
+                </div>
+              </div>
+              <div class="chart-card">
+                <h3 class="chart-title">Eintritte &#8212; Gratis vs. Kosten</h3>
+                <div class="chart-container" style="position:relative;height:300px">
+                  <canvas id="chart-entries"></canvas>
+                </div>
+              </div>
+            </div>
+            <div id="budget-counter-container"></div>
+          </div>
         </div>
       </section>
 
@@ -150,6 +178,8 @@
   <script src="js/data.js"></script>
   <script src="js/map.js"></script>
   <script src="js/charts.js"></script>
+  <script src="js/videos.js"></script>
+  <script src="js/restaurants.js"></script>
   <script src="js/app.js"></script>
 
 </body>

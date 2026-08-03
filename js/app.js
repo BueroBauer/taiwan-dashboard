@@ -293,6 +293,9 @@
     if (window.mapModule) {
       window.mapModule.init();
     }
+    if (window.chartsModule)      { window.chartsModule.init(); }
+    if (window.videosModule)      { window.videosModule.init(); }
+    if (window.restaurantsModule) { window.restaurantsModule.init(); }
     renderTimeline();
   });
 
