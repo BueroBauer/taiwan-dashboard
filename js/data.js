@@ -37,6 +37,7 @@ window.TAIWAN = {
       base: { lat: 25.0330, lng: 121.5654 },
       highlights: ["Shilin Night Market", "Elephant Mountain Sonnenuntergang", "Longshan Temple", "Jetlag-Anpassung"],
       earlyBook: false,
+      avgTemp: 22,
       days: [
         {
           day: 1,
@@ -44,12 +45,12 @@ window.TAIWAN = {
           jetlag: true,
           slots: {
             morning: [
-              { name: "Ankunft Taoyuan Airport", coords: { lat: 25.0797, lng: 121.2342 }, price: { eur: 0, note: "Flug AUA" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0797,121.2342", tip: "MRT direkt in die Stadt, ca. 40 min", category: "transport" },
-              { name: "Hotel Check-in + Ausruhen", coords: { lat: 25.0330, lng: 121.5654 }, price: { eur: 0, note: "Im Preis inkl." }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0330,121.5654", tip: "Jetlag: früh schlafen legen", category: "hotel" }
+              { name: "Ankunft Taoyuan Airport", coords: { lat: 25.0797, lng: 121.2342 }, price: { eur: 0, note: "Flug AUA" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taoyuan+Airport+Taipei", tip: "MRT direkt in die Stadt, ca. 40 min", category: "transport" },
+              { name: "Hotel Check-in + Ausruhen", coords: { lat: 25.0330, lng: 121.5654 }, price: { eur: 0, note: "Im Preis inkl." }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Taipei", tip: "Jetlag: früh schlafen legen", category: "hotel" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Longshan Temple", coords: { lat: 25.0370, lng: 121.4997 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0370,121.4997", tip: "Ruhig, schöne Atmosphäre auch für Kleinkind", category: "tempel" }
+              { name: "Longshan Temple", coords: { lat: 25.0370, lng: 121.4997 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Longshan+Temple+Taipei", tip: "Ruhig, schöne Atmosphäre auch für Kleinkind", category: "tempel" }
             ]
           }
         },
@@ -59,12 +60,12 @@ window.TAIWAN = {
           jetlag: true,
           slots: {
             morning: [
-              { name: "Elephant Mountain (象山)", coords: { lat: 25.0264, lng: 121.5773 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=25.0264,121.5773", tip: "Treppen — Kind tragen oder Buggy am Eingang lassen", category: "natur" },
-              { name: "National Palace Museum", coords: { lat: 25.1025, lng: 121.5484 }, price: { eur: 6, note: "ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.1025,121.5484", tip: "Buggy-freundlich, Highlights sind jade + bronzeware", category: "museum" }
+              { name: "Elephant Mountain (象山)", coords: { lat: 25.0264, lng: 121.5773 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Elephant+Mountain+Taipei", tip: "Treppen — Kind tragen oder Buggy am Eingang lassen", category: "natur" },
+              { name: "National Palace Museum", coords: { lat: 25.1025, lng: 121.5484 }, price: { eur: 6, note: "ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei", tip: "Buggy-freundlich, Highlights sind jade + bronzeware", category: "museum" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Shilin Night Market", coords: { lat: 25.0881, lng: 121.5240 }, price: { eur: 8, note: "Essen vor Ort" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0881,121.5240", tip: "Viele vegane Optionen: Stinky Tofu (vegan!), Scallion Pancake", category: "food" }
+              { name: "Shilin Night Market", coords: { lat: 25.0881, lng: 121.5240 }, price: { eur: 8, note: "Essen vor Ort" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Shilin+Night+Market+Taipei", tip: "Viele vegane Optionen: Stinky Tofu (vegan!), Scallion Pancake", category: "food" }
             ]
           }
         }
@@ -83,6 +84,7 @@ window.TAIWAN = {
       base: { lat: 23.9769, lng: 121.6044 },
       highlights: ["Taroko Nationalpark", "Shakadang Trail", "Qixingtan Beach", "Liyu Lake"],
       earlyBook: false,
+      avgTemp: 21,
       days: [
         {
           day: 1,
@@ -90,12 +92,12 @@ window.TAIWAN = {
           jetlag: false,
           slots: {
             morning: [
-              { name: "Zug Taipei → Hualien (Puyuma Express)", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 8, note: "ca. TWD 340 pro Person" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Tickets rechtzeitig buchen — ausgebucht möglich", category: "transport" },
-              { name: "Hotel Check-in Hualien", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "Im Preis inkl." }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Unterkunft nahe Bahnhof ideal", category: "hotel" }
+              { name: "Zug Taipei → Hualien (Puyuma Express)", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 8, note: "ca. TWD 340 pro Person" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Bahnhof+Hualien", tip: "Tickets rechtzeitig buchen — ausgebucht möglich", category: "transport" },
+              { name: "Hotel Check-in Hualien", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "Im Preis inkl." }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Hualien", tip: "Unterkunft nahe Bahnhof ideal", category: "hotel" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Qixingtan Beach", coords: { lat: 24.0372, lng: 121.6478 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=24.0372,121.6478", tip: "Kieselstrand, perfekt bei Sonnenuntergang. Kind kann Steine ins Wasser werfen", category: "strand" }
+              { name: "Qixingtan Beach", coords: { lat: 24.0372, lng: 121.6478 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Qixingtan+Beach+Hualien", tip: "Kieselstrand, perfekt bei Sonnenuntergang. Kind kann Steine ins Wasser werfen", category: "strand" }
             ]
           }
         },
@@ -105,11 +107,11 @@ window.TAIWAN = {
           jetlag: false,
           slots: {
             morning: [
-              { name: "Taroko National Park — Swallow Grotto (燕子口)", coords: { lat: 24.1574, lng: 121.6216 }, price: { eur: 0, note: "gratis, Helm Pflicht" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1574,121.6216", tip: "Schutzhelm mitnehmen/leihen. Kind im Tragegestell besser als Buggy", category: "natur" }
+              { name: "Taroko National Park — Swallow Grotto (燕子口)", coords: { lat: 24.1574, lng: 121.6216 }, price: { eur: 0, note: "gratis, Helm Pflicht" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taroko+National+Park+Swallow+Grotto+Hualien", tip: "Schutzhelm mitnehmen/leihen. Kind im Tragegestell besser als Buggy", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Shakadang Trail (神秘谷步道)", coords: { lat: 24.1452, lng: 121.6199 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1452,121.6199", tip: "Flacher Weg am Fluss — mit Kind gut machbar zu Fuß oder im Tragegestell", category: "wandern" }
+              { name: "Shakadang Trail (神秘谷步道)", coords: { lat: 24.1452, lng: 121.6199 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Shakadang+Trail+Hualien", tip: "Flacher Weg am Fluss — mit Kind gut machbar zu Fuß oder im Tragegestell", category: "wandern" }
             ]
           }
         },
@@ -117,11 +119,11 @@ window.TAIWAN = {
           day: 3, date: "2026-12-05", jetlag: false,
           slots: {
             morning: [
-              { name: "Liyu Lake (鯉魚潭)", coords: { lat: 23.8979, lng: 121.5500 }, price: { eur: 3, note: "Boot mieten ca. TWD 150" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8979,121.5500", tip: "Schöner See südlich von Hualien, gut für Kleinkind", category: "natur" }
+              { name: "Liyu Lake (鯉魚潭)", coords: { lat: 23.8979, lng: 121.5500 }, price: { eur: 3, note: "Boot mieten ca. TWD 150" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Liyu+Lake+Hualien", tip: "Schöner See südlich von Hualien, gut für Kleinkind", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Hualien Stadtbummel + Abendessen", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 5, note: "Abendessen" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Vege Creek Restaurant für vegane Taiwan-Küche", category: "food" }
+              { name: "Hualien Stadtbummel + Abendessen", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 5, note: "Abendessen" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Stadtbummel+Hualien", tip: "Vege Creek Restaurant für vegane Taiwan-Küche", category: "food" }
             ]
           }
         },
@@ -129,11 +131,11 @@ window.TAIWAN = {
           day: 4, date: "2026-12-06", jetlag: false,
           slots: {
             morning: [
-              { name: "Taroko — Tianxiang (天祥)", coords: { lat: 24.1879, lng: 121.5983 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1879,121.5983", tip: "Höhepunkt des Taroko-Tals, Tempel auf Fels", category: "natur" }
+              { name: "Taroko — Tianxiang (天祥)", coords: { lat: 24.1879, lng: 121.5983 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taroko+Tianxiang+Hualien", tip: "Höhepunkt des Taroko-Tals, Tempel auf Fels", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Entspannung am Hotel", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Ruhetag nach aktivem Taroko-Tag", category: "ruhe" }
+              { name: "Entspannung am Hotel", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Hualien", tip: "Ruhetag nach aktivem Taroko-Tag", category: "ruhe" }
             ]
           }
         },
@@ -141,11 +143,11 @@ window.TAIWAN = {
           day: 5, date: "2026-12-07", jetlag: false,
           slots: {
             morning: [
-              { name: "Tropic of Cancer Monument", coords: { lat: 23.5000, lng: 121.4200 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.5000,121.4200", tip: "Auf dem Weg nach Süden, foto-worthy", category: "sehens" }
+              { name: "Tropic of Cancer Monument", coords: { lat: 23.5000, lng: 121.4200 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Tropic+of+Cancer+Monument+Hualien", tip: "Auf dem Weg nach Süden, foto-worthy", category: "sehens" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Carp Lake (Liyu Lake) Runde 2", coords: { lat: 23.8979, lng: 121.5500 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8979,121.5500", tip: "Fahrradtour um den See — Kinderfahrrad mieten möglich", category: "natur" }
+              { name: "Carp Lake (Liyu Lake) Runde 2", coords: { lat: 23.8979, lng: 121.5500 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Liyu+Lake+Hualien", tip: "Fahrradtour um den See — Kinderfahrrad mieten möglich", category: "natur" }
             ]
           }
         },
@@ -153,11 +155,11 @@ window.TAIWAN = {
           day: 6, date: "2026-12-08", jetlag: false,
           slots: {
             morning: [
-              { name: "Hualien Market + Frühstück", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 4, note: "Frühstück" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Lokale Jianbing und Sojamilch", category: "food" }
+              { name: "Hualien Market + Frühstück", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 4, note: "Frühstück" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Market+Hualien", tip: "Lokale Jianbing und Sojamilch", category: "food" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Spontaner Erkundungstag", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Puffer-Tag für Wetterabweichungen", category: "flexibel" }
+              { name: "Spontaner Erkundungstag", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Stadt+Hualien", tip: "Puffer-Tag für Wetterabweichungen", category: "flexibel" }
             ]
           }
         },
@@ -165,11 +167,11 @@ window.TAIWAN = {
           day: 7, date: "2026-12-09", jetlag: false,
           slots: {
             morning: [
-              { name: "Abreise-Vorbereitung + Hualien Souvenir", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 5, note: "Souvenirs" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", tip: "Jade-Produkte und Taroko-Steinschmuck sind typisch", category: "shopping" }
+              { name: "Abreise-Vorbereitung + Hualien Souvenir", coords: { lat: 23.9769, lng: 121.6044 }, price: { eur: 5, note: "Souvenirs" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Souvenir+Hualien", tip: "Jade-Produkte und Taroko-Steinschmuck sind typisch", category: "shopping" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Letzter Blick auf Qixingtan Beach", coords: { lat: 24.0372, lng: 121.6478 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=24.0372,121.6478", tip: "Abschied von Hualien", category: "strand" }
+              { name: "Letzter Blick auf Qixingtan Beach", coords: { lat: 24.0372, lng: 121.6478 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Qixingtan+Beach+Hualien", tip: "Abschied von Hualien", category: "strand" }
             ]
           }
         }
@@ -188,16 +190,17 @@ window.TAIWAN = {
       base: { lat: 23.4700, lng: 121.3900 },
       highlights: ["Luye Highland Heißluftballon", "Chishang Bike Path", "Ruisui Hot Springs"],
       earlyBook: false,
+      avgTemp: 19,
       days: [
         {
           day: 1, date: "2026-12-10", jetlag: false,
           slots: {
             morning: [
-              { name: "Zug Hualien → Guanshan/Chishang", coords: { lat: 23.2165, lng: 121.1818 }, price: { eur: 5, note: "Zug ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.2165,121.1818", tip: "Landschaftlich spektakulär — Fensterplatz sichern", category: "transport" }
+              { name: "Zug Hualien → Guanshan/Chishang", coords: { lat: 23.2165, lng: 121.1818 }, price: { eur: 5, note: "Zug ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chishang+Bahnhof+East+Rift+Valley", tip: "Landschaftlich spektakulär — Fensterplatz sichern", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Chishang Bike Path (伯朗大道)", coords: { lat: 23.2165, lng: 121.1818 }, price: { eur: 3, note: "Fahrradmiete" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.2165,121.1818", tip: "Ikonische Reisfeld-Strasse, Kindersitz-Fahrrad verfügbar", category: "natur" }
+              { name: "Chishang Bike Path (伯朗大道)", coords: { lat: 23.2165, lng: 121.1818 }, price: { eur: 3, note: "Fahrradmiete" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chishang+Bike+Path+East+Rift+Valley", tip: "Ikonische Reisfeld-Strasse, Kindersitz-Fahrrad verfügbar", category: "natur" }
             ]
           }
         },
@@ -205,11 +208,11 @@ window.TAIWAN = {
           day: 2, date: "2026-12-11", jetlag: false,
           slots: {
             morning: [
-              { name: "Luye Highland Heißluftballon (鹿野高台)", coords: { lat: 23.0681, lng: 121.1437 }, price: { eur: 15, note: "Ballon ca. TWD 600" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.0681,121.1437", tip: "Morgens früh los — 6:00 Uhr Start, Kind darf mit wenn groß genug", category: "aktivität" }
+              { name: "Luye Highland Heißluftballon (鹿野高台)", coords: { lat: 23.0681, lng: 121.1437 }, price: { eur: 15, note: "Ballon ca. TWD 600" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Luye+Highland+East+Rift+Valley", tip: "Buchung für 07:30 Startzeit anfragen — frühere Slots nicht buchbar mit Kleinkind", category: "aktivität" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Entspannung Luye", coords: { lat: 23.0681, lng: 121.1437 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.0681,121.1437", tip: "", category: "ruhe" }
+              { name: "Entspannung Luye", coords: { lat: 23.0681, lng: 121.1437 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Luye+Highland+East+Rift+Valley", tip: "", category: "ruhe" }
             ]
           }
         },
@@ -217,11 +220,11 @@ window.TAIWAN = {
           day: 3, date: "2026-12-12", jetlag: false,
           slots: {
             morning: [
-              { name: "Ruisui Hot Springs (瑞穗溫泉)", coords: { lat: 23.4965, lng: 121.3870 }, price: { eur: 5, note: "Eintrittspreis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.4965,121.3870", tip: "Natrium-Bicarbonat-Quelle — Altersbeschränkung für Kinder klären!", category: "wellness" }
+              { name: "Ruisui Hot Springs (瑞穗溫泉)", coords: { lat: 23.4965, lng: 121.3870 }, price: { eur: 5, note: "Eintrittspreis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Ruisui+Hot+Springs+East+Rift+Valley", tip: "Natrium-Bicarbonat-Quelle — Altersbeschränkung für Kinder klären!", category: "wellness" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Ruisui Umgebung erkunden", coords: { lat: 23.4965, lng: 121.3870 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.4965,121.3870", tip: "", category: "sehens" }
+              { name: "Ruisui Umgebung erkunden", coords: { lat: 23.4965, lng: 121.3870 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Ruisui+East+Rift+Valley", tip: "", category: "sehens" }
             ]
           }
         },
@@ -256,16 +259,17 @@ window.TAIWAN = {
       base: { lat: 22.7583, lng: 121.1444 },
       highlights: ["Xiaoyeliu Geopark", "Jhihben Hot Springs", "Green Island Tagesausflug"],
       earlyBook: false,
+      avgTemp: 24,
       days: [
         {
           day: 1, date: "2026-12-15", jetlag: false,
           slots: {
             morning: [
-              { name: "Zug → Taitung Bahnhof", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 4, note: "Zug" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.7583,121.1444", tip: "Hotel in der Nähe Bahnhof buchen", category: "transport" }
+              { name: "Zug → Taitung Bahnhof", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 4, note: "Zug" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taitung+Bahnhof+Taitung", tip: "Hotel in der Nähe Bahnhof buchen", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Xiaoyeliu Geopark (小野柳)", coords: { lat: 22.8267, lng: 121.1417 }, price: { eur: 2, note: "ca. TWD 80" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.8267,121.1417", tip: "Bizarre Felsformationen am Meer — gut für Kleinkinder", category: "natur" }
+              { name: "Xiaoyeliu Geopark (小野柳)", coords: { lat: 22.8267, lng: 121.1417 }, price: { eur: 2, note: "ca. TWD 80" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Xiaoyeliu+Geopark+Taitung", tip: "Bizarre Felsformationen am Meer — gut für Kleinkinder", category: "natur" }
             ]
           }
         },
@@ -273,11 +277,11 @@ window.TAIWAN = {
           day: 2, date: "2026-12-16", jetlag: false,
           slots: {
             morning: [
-              { name: "Green Island Tagesausflug (綠島)", coords: { lat: 22.6715, lng: 121.4869 }, price: { eur: 25, note: "Fähre + Moped" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.6715,121.4869", tip: "Fähre 30min, Moped auf der Insel, Kinder-Sitz prüfen", category: "ausflug" }
+              { name: "Green Island Tagesausflug (綠島)", coords: { lat: 22.6715, lng: 121.4869 }, price: { eur: 25, note: "Fähre + Moped" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Green+Island+Taitung", tip: "Fähre 30min, Moped auf der Insel, Kinder-Sitz prüfen", category: "ausflug" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Green Island — Rückkehr", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.7583,121.1444", tip: "Abendliche Rückfähre", category: "transport" }
+              { name: "Green Island — Rückkehr", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taitung+Fährhafen+Taitung", tip: "Abendliche Rückfähre", category: "transport" }
             ]
           }
         },
@@ -285,11 +289,11 @@ window.TAIWAN = {
           day: 3, date: "2026-12-17", jetlag: false,
           slots: {
             morning: [
-              { name: "Jhihben Hot Springs (知本溫泉)", coords: { lat: 22.7158, lng: 120.9978 }, price: { eur: 8, note: "Hotel Therme" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.7158,120.9978", tip: "Indoorpool für Kinder, Schwefelquelle", category: "wellness" }
+              { name: "Jhihben Hot Springs (知本溫泉)", coords: { lat: 22.7158, lng: 120.9978 }, price: { eur: 8, note: "Hotel Therme" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Jhihben+Hot+Springs+Taitung", tip: "Indoorpool für Kinder, Schwefelquelle", category: "wellness" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Abreise-Vorbereitung Taitung", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.7583,121.1444", tip: "", category: "hotel" }
+              { name: "Abreise-Vorbereitung Taitung", coords: { lat: 22.7583, lng: 121.1444 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Taitung", tip: "", category: "hotel" }
             ]
           }
         }
@@ -308,16 +312,17 @@ window.TAIWAN = {
       base: { lat: 22.3400, lng: 120.3700 },
       highlights: ["Glasbodenboot", "Meeresschildkröten snorkeln", "Vase Rock", "Sunset Beach"],
       earlyBook: true,
+      avgTemp: 25,
       days: [
         {
           day: 1, date: "2026-12-18", jetlag: false,
           slots: {
             morning: [
-              { name: "Fähre Donggang → Xiaoliuqiu", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 5, note: "Fähre TWD 220" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tip: "Buggy auf Fähre möglich, 30min Überfahrt", category: "transport" }
+              { name: "Fähre Donggang → Xiaoliuqiu", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 5, note: "Fähre TWD 220" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Xiaoliuqiu+Fährhafen+Xiaoliuqiu", tip: "Buggy auf Fähre möglich, 30min Überfahrt", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Vase Rock (花瓶岩)", coords: { lat: 22.3457, lng: 120.3713 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.3457,120.3713", tip: "Wahrzeichen der Insel, kurzer Spaziergang", category: "natur" }
+              { name: "Vase Rock (花瓶岩)", coords: { lat: 22.3457, lng: 120.3713 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Vase+Rock+Xiaoliuqiu", tip: "Wahrzeichen der Insel, kurzer Spaziergang", category: "natur" }
             ]
           }
         },
@@ -325,11 +330,11 @@ window.TAIWAN = {
           day: 2, date: "2026-12-19", jetlag: false,
           slots: {
             morning: [
-              { name: "Glasbodenboot Tour (玻璃底船)", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 18, note: "TWD 750" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tip: "Altersbeschränkung prüfen! Kind 2J — im Voraus anfragen", category: "aktivität" }
+              { name: "Glasbodenboot Tour (玻璃底船)", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 18, note: "TWD 750" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Glasbodenboot+Tour+Xiaoliuqiu", tip: "Altersbeschränkung prüfen! Kind 2J — im Voraus anfragen", category: "aktivität" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Sunset Beach (落日亭)", coords: { lat: 22.3384, lng: 120.3684 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.3384,120.3684", tip: "Schönster Sonnenuntergang der ganzen Reise", category: "strand" }
+              { name: "Sunset Beach (落日亭)", coords: { lat: 22.3384, lng: 120.3684 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sunset+Beach+Xiaoliuqiu", tip: "Schönster Sonnenuntergang der ganzen Reise", category: "strand" }
             ]
           }
         },
@@ -337,11 +342,11 @@ window.TAIWAN = {
           day: 3, date: "2026-12-20", jetlag: false,
           slots: {
             morning: [
-              { name: "Schildkröten-Schnorcheln", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 15, note: "Schnorchel-Tour TWD 600" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tip: "Eine Person bleibt mit Kind am Strand, abwechseln", category: "aktivität" }
+              { name: "Schildkröten-Schnorcheln", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 15, note: "Schnorchel-Tour TWD 600" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Schildkroten+Schnorcheln+Xiaoliuqiu", tip: "Eine Person bleibt mit Kind am Strand, abwechseln", category: "aktivität" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Inselrunde per Elektroroller", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 8, note: "Roller TWD 350" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tip: "Kinderfahrrad-Sitz nachfragen beim Verleih", category: "aktivität" }
+              { name: "Inselrunde per Elektroroller", coords: { lat: 22.3400, lng: 120.3700 }, price: { eur: 8, note: "Roller TWD 350" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Xiaoliuqiu+Insel+Xiaoliuqiu", tip: "Kinderfahrrad-Sitz nachfragen beim Verleih", category: "aktivität" }
             ]
           }
         },
@@ -368,16 +373,17 @@ window.TAIWAN = {
       base: { lat: 21.9400, lng: 120.8500 },
       highlights: ["Weißer Sandstrand", "Silvester am Strand", "Kenting National Park", "Little Bay"],
       earlyBook: true,
+      avgTemp: 24,
       days: [
         {
           day: 1, date: "2026-12-23", jetlag: false,
           slots: {
             morning: [
-              { name: "Anreise nach Kenting (Bus/Mietwagen)", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 10, note: "Bus oder Taxi" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9400,120.8500", tip: "Mietwagen sehr empfehlenswert für Kenting — mehr Flexibilität", category: "transport" }
+              { name: "Anreise nach Kenting (Bus/Mietwagen)", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 10, note: "Bus oder Taxi" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+National+Park+Kenting", tip: "Mietwagen sehr empfehlenswert für Kenting — mehr Flexibilität", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "White Sand Beach (白沙灣)", coords: { lat: 21.9467, lng: 120.7856 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9467,120.7856", tip: "Feiner weißer Sand, flaches Wasser — perfekt für Kleinkinder", category: "strand" }
+              { name: "White Sand Beach (白沙灣)", coords: { lat: 21.9467, lng: 120.7856 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=White+Sand+Beach+Kenting", tip: "Feiner weißer Sand, flaches Wasser — perfekt für Kleinkinder", category: "strand" }
             ]
           }
         },
@@ -385,11 +391,11 @@ window.TAIWAN = {
           day: 2, date: "2026-12-24", jetlag: false,
           slots: {
             morning: [
-              { name: "Kenting National Park Visitor Center", coords: { lat: 21.9540, lng: 120.8015 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9540,120.8015", tip: "Infos über Nationalpark-Aktivitäten", category: "natur" }
+              { name: "Kenting National Park Visitor Center", coords: { lat: 21.9540, lng: 120.8015 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+National+Park+Visitor+Center+Kenting", tip: "Infos über Nationalpark-Aktivitäten", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Heilige Nacht am Strand", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9400,120.8500", tip: "Weihnachten unter Palmen", category: "strand" }
+              { name: "Heilige Nacht am Strand", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 0, note: "" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+Strand+Kenting", tip: "Weihnachten unter Palmen", category: "strand" }
             ]
           }
         },
@@ -423,11 +429,11 @@ window.TAIWAN = {
           jetlag: false,
           slots: {
             morning: [
-              { name: "Maobitou Park (猫鼻頭公園)", coords: { lat: 21.9000, lng: 120.7300 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9000,120.7300", tip: "Südlichster Punkt Taiwans", category: "natur" }
+              { name: "Maobitou Park (猫鼻頭公園)", coords: { lat: 21.9000, lng: 120.7300 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Maobitou+Park+Kenting", tip: "Südlichster Punkt Taiwans", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Silvester-Feier am Strand", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 10, note: "Essen + Drinks" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9400,120.8500", tip: "Kind früh ins Bett, Erwachsene genießen Feuerwerk am Strand", category: "feier" }
+              { name: "Silvester-Feier am Strand", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 10, note: "Essen + Drinks" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+Strand+Kenting", tip: "Kind früh ins Bett, Erwachsene genießen Feuerwerk am Strand", category: "feier" }
             ]
           }
         },
@@ -435,11 +441,11 @@ window.TAIWAN = {
           day: 10, date: "2027-01-01", jetlag: false,
           slots: {
             morning: [
-              { name: "Neujahr-Sonnenaufgang", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9400,120.8500", tip: "Früh aufstehen lohnt sich", category: "natur" }
+              { name: "Neujahr-Sonnenaufgang", coords: { lat: 21.9400, lng: 120.8500 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+Strand+Kenting", tip: "Früh aufstehen lohnt sich", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Little Bay (小灣)", coords: { lat: 21.9445, lng: 120.8089 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=21.9445,120.8089", tip: "Ruhige Bucht, flaches Wasser", category: "strand" }
+              { name: "Little Bay (小灣)", coords: { lat: 21.9445, lng: 120.8089 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Little+Bay+Kenting", tip: "Ruhige Bucht, flaches Wasser", category: "strand" }
             ]
           }
         }
@@ -458,16 +464,17 @@ window.TAIWAN = {
       base: { lat: 22.9998, lng: 120.2270 },
       highlights: ["Chihkan Tower", "Anping Fort", "Tempel-Hopping", "Tainan Nachtmarkt"],
       earlyBook: false,
+      avgTemp: 20,
       days: [
         {
           day: 1, date: "2027-01-02", jetlag: false,
           slots: {
             morning: [
-              { name: "Anreise Kenting → Tainan", coords: { lat: 22.9998, lng: 120.2270 }, price: { eur: 10, note: "Bus/Zug" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.9998,120.2270", tip: "Ca. 2h mit Bus, Zug von Zuoying/Kaohsiung auch möglich", category: "transport" }
+              { name: "Anreise Kenting → Tainan", coords: { lat: 22.9998, lng: 120.2270 }, price: { eur: 10, note: "Bus/Zug" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Tainan+Bahnhof+Tainan", tip: "Ca. 2h mit Bus, Zug von Zuoying/Kaohsiung auch möglich", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Chihkan Tower (赤崁樓)", coords: { lat: 22.9969, lng: 120.2033 }, price: { eur: 3, note: "ca. TWD 100" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.9969,120.2033", tip: "Niederländisches Fort, gut restauriert, buggy-freundlich", category: "museum" }
+              { name: "Chihkan Tower (赤崁樓)", coords: { lat: 22.9969, lng: 120.2033 }, price: { eur: 3, note: "ca. TWD 100" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chihkan+Tower+Tainan", tip: "Niederländisches Fort, gut restauriert, buggy-freundlich", category: "museum" }
             ]
           }
         },
@@ -475,11 +482,11 @@ window.TAIWAN = {
           day: 2, date: "2027-01-03", jetlag: false,
           slots: {
             morning: [
-              { name: "Anping Old Fort (安平古堡)", coords: { lat: 23.0026, lng: 120.1576 }, price: { eur: 3, note: "ca. TWD 100" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.0026,120.1576", tip: "Ältestes Fort Taiwans, schöne Aussicht", category: "museum" }
+              { name: "Anping Old Fort (安平古堡)", coords: { lat: 23.0026, lng: 120.1576 }, price: { eur: 3, note: "ca. TWD 100" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Anping+Old+Fort+Tainan", tip: "Ältestes Fort Taiwans, schöne Aussicht", category: "museum" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Tainan Night Market (花園夜市)", coords: { lat: 22.9874, lng: 120.1953 }, price: { eur: 8, note: "Essen" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.9874,120.1953", tip: "Nur Donnerstag/Samstag/Sonntag, riesig und günstig", category: "food" }
+              { name: "Tainan Night Market (花園夜市)", coords: { lat: 22.9874, lng: 120.1953 }, price: { eur: 8, note: "Essen" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Tainan+Night+Market+Tainan", tip: "Nur Donnerstag/Samstag/Sonntag, riesig und günstig", category: "food" }
             ]
           }
         },
@@ -487,11 +494,11 @@ window.TAIWAN = {
           day: 3, date: "2027-01-04", jetlag: false,
           slots: {
             morning: [
-              { name: "Confucius Temple Tainan (孔廟)", coords: { lat: 23.0016, lng: 120.2036 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.0016,120.2036", tip: "Ältester Konfuzius-Tempel Taiwans (1665)", category: "tempel" }
+              { name: "Confucius Temple Tainan (孔廟)", coords: { lat: 23.0016, lng: 120.2036 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Confucius+Temple+Tainan", tip: "Ältester Konfuzius-Tempel Taiwans (1665)", category: "tempel" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Chimei Museum (奇美博物館)", coords: { lat: 22.9637, lng: 120.1943 }, price: { eur: 5, note: "ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=22.9637,120.1943", tip: "Fantastische Sammlung, riesige Hallen — Buggy ideal", category: "museum" }
+              { name: "Chimei Museum (奇美博物館)", coords: { lat: 22.9637, lng: 120.1943 }, price: { eur: 5, note: "ca. TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chimei+Museum+Tainan", tip: "Fantastische Sammlung, riesige Hallen — Buggy ideal", category: "museum" }
             ]
           }
         },
@@ -550,16 +557,17 @@ window.TAIWAN = {
       base: { lat: 23.5118, lng: 120.8039 },
       highlights: ["Alishan Forest Railway", "Sacred Tree", "Sonnenaufgang Zhushan", "Fenqihu Tagesausflug"],
       earlyBook: true,
+      avgTemp: 8,
       days: [
         {
           day: 1, date: "2027-01-15", jetlag: false,
           slots: {
             morning: [
-              { name: "Zug/Bus nach Alishan (2300m ü.M.)", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 8, note: "Bus TWD 325 oder Zug" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", tip: "Warme Kleidung! Bergzug spektakulär aber langsam", category: "transport" }
+              { name: "Zug/Bus nach Alishan (2300m ü.M.)", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 8, note: "Bus TWD 325 oder Zug" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Bergstation+Alishan", tip: "Warme Kleidung! Bergzug spektakulär aber langsam", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Alishan Forest Railway Kurzstrecke", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 8, note: "TWD 300" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", tip: "Buggy im Zug — prüfen ob möglich, sonst Kind tragen", category: "aktivität" }
+              { name: "Alishan Forest Railway Kurzstrecke", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 8, note: "TWD 300" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Forest+Railway+Alishan", tip: "Buggy im Zug — prüfen ob möglich, sonst Kind tragen", category: "aktivität" }
             ]
           }
         },
@@ -567,11 +575,11 @@ window.TAIWAN = {
           day: 2, date: "2027-01-16", jetlag: false,
           slots: {
             morning: [
-              { name: "Sonnenaufgang Zhushan (祝山)", coords: { lat: 23.5050, lng: 120.8000 }, price: { eur: 3, note: "Bergbahn TWD 100" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5050,120.8000", tip: "03:30 Uhr aufstehen! Thermosklappe mitbringen. Kind im Tragetuch", category: "natur" }
+              { name: "Sonnenaufgang Zhushan (祝山)", coords: { lat: 23.5050, lng: 120.8000 }, price: { eur: 3, note: "Bergbahn TWD 100" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Zhushan+Sunrise+Alishan", tip: "Bergbahn fährt ab ca. 08:00 — früh starten für beste Plätze. Kind im Tragetuch", category: "natur" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Sacred Tree Area (受鎮宮)", coords: { lat: 23.5107, lng: 120.8042 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.5107,120.8042", tip: "Uralte Zypressenallee, magische Atmosphäre", category: "natur" }
+              { name: "Sacred Tree Area (受鎮宮)", coords: { lat: 23.5107, lng: 120.8042 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sacred+Tree+Area+Alishan", tip: "Uralte Zypressenallee, magische Atmosphäre", category: "natur" }
             ]
           }
         },
@@ -579,11 +587,11 @@ window.TAIWAN = {
           day: 3, date: "2027-01-17", jetlag: false,
           slots: {
             morning: [
-              { name: "Fenqihu Old Street Tagesausflug (奮起湖)", coords: { lat: 23.5647, lng: 120.7034 }, price: { eur: 5, note: "Zug Fenqihu" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.5647,120.7034", tip: "Charmantes Bergstädtchen mit altem Bahnhof, vegane Bento-Boxen", category: "ausflug" }
+              { name: "Fenqihu Old Street Tagesausflug (奮起湖)", coords: { lat: 23.5647, lng: 120.7034 }, price: { eur: 5, note: "Zug Fenqihu" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Fenqihu+Old+Street+Alishan", tip: "Charmantes Bergstädtchen mit altem Bahnhof, vegane Bento-Boxen", category: "ausflug" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Alishan-Spaziergang Waldpfade", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", tip: "Kühlere Temperaturen — Fleecejacke für Kind", category: "wandern" }
+              { name: "Alishan-Spaziergang Waldpfade", coords: { lat: 23.5118, lng: 120.8039 }, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Waldpfade+Alishan", tip: "Kühlere Temperaturen — Fleecejacke für Kind", category: "wandern" }
             ]
           }
         },
@@ -610,16 +618,17 @@ window.TAIWAN = {
       base: { lat: 23.8650, lng: 120.9092 },
       highlights: ["Sun Moon Lake Cableway", "Wenwu Temple", "Seefahrt", "Formosan Aboriginal Culture Village"],
       earlyBook: false,
+      avgTemp: 15,
       days: [
         {
           day: 1, date: "2027-01-20", jetlag: false,
           slots: {
             morning: [
-              { name: "Bus Alishan → Sun Moon Lake", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 8, note: "Bus TWD 350" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8650,120.9092", tip: "Ca. 2.5h Busfahrt durch Berglandschaft", category: "transport" }
+              { name: "Bus Alishan → Sun Moon Lake", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 8, note: "Bus TWD 350" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Sun+Moon+Lake", tip: "Ca. 2.5h Busfahrt durch Berglandschaft", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Sun Moon Lake Cableway (日月潭纜車)", coords: { lat: 23.8460, lng: 120.9198 }, price: { eur: 6, note: "TWD 250" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8460,120.9198", tip: "Gondel über den See — Kleinkinder lieben es", category: "aktivität" }
+              { name: "Sun Moon Lake Cableway (日月潭纜車)", coords: { lat: 23.8460, lng: 120.9198 }, price: { eur: 6, note: "TWD 250" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Cableway+Sun+Moon+Lake", tip: "Gondel über den See — Kleinkinder lieben es", category: "aktivität" }
             ]
           }
         },
@@ -627,11 +636,11 @@ window.TAIWAN = {
           day: 2, date: "2027-01-21", jetlag: false,
           slots: {
             morning: [
-              { name: "Wenwu Temple (文武廟)", coords: { lat: 23.8840, lng: 120.9169 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8840,120.9169", tip: "Imposanter Tempel über dem See, spektakuläre Aussicht", category: "tempel" }
+              { name: "Wenwu Temple (文武廟)", coords: { lat: 23.8840, lng: 120.9169 }, price: { eur: 0, note: "gratis" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Wenwu+Temple+Sun+Moon+Lake", tip: "Imposanter Tempel über dem See, spektakuläre Aussicht", category: "tempel" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Seefahrt Sun Moon Lake", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 5, note: "Boot TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8650,120.9092", tip: "Schiff-Tour rund um den See, ca. 45min", category: "aktivität" }
+              { name: "Seefahrt Sun Moon Lake", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 5, note: "Boot TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Bootsfahrt+Sun+Moon+Lake", tip: "Schiff-Tour rund um den See, ca. 45min", category: "aktivität" }
             ]
           }
         },
@@ -639,11 +648,11 @@ window.TAIWAN = {
           day: 3, date: "2027-01-22", jetlag: false,
           slots: {
             morning: [
-              { name: "Formosan Aboriginal Culture Village (九族文化村)", coords: { lat: 23.8467, lng: 120.9244 }, price: { eur: 15, note: "TWD 620" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8467,120.9244", tip: "Vergnügungspark + Kulturpark, Gondel inkl., Kind-freundlich", category: "ausflug" }
+              { name: "Formosan Aboriginal Culture Village (九族文化村)", coords: { lat: 23.8467, lng: 120.9244 }, price: { eur: 15, note: "TWD 620" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Formosan+Aboriginal+Culture+Village+Sun+Moon+Lake", tip: "Vergnügungspark + Kulturpark, Gondel inkl., Kind-freundlich", category: "ausflug" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Seerunde Fahrrad", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 5, note: "Fahrrad TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=23.8650,120.9092", tip: "Kindersitz mieten, 33km Rundweg", category: "aktivität" }
+              { name: "Seerunde Fahrrad", coords: { lat: 23.8650, lng: 120.9092 }, price: { eur: 5, note: "Fahrrad TWD 200" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Fahrrad+Sun+Moon+Lake", tip: "Kindersitz mieten, 33km Rundweg", category: "aktivität" }
             ]
           }
         },
@@ -666,16 +675,17 @@ window.TAIWAN = {
       base: { lat: 25.0330, lng: 121.5654 },
       highlights: ["Taipei 101", "Beitou Hot Springs", "Maokong Gondola", "Danshui Old Street", "Letzter Abend"],
       earlyBook: false,
+      avgTemp: 18,
       days: [
         {
           day: 1, date: "2027-01-24", jetlag: false,
           slots: {
             morning: [
-              { name: "THSR Sun Moon Lake → Taipei", coords: { lat: 25.0330, lng: 121.5654 }, price: { eur: 25, note: "THSR ca. TWD 1080" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0330,121.5654", tip: "Hochgeschwindigkeitszug, 2h, Buggy platzsparend falten", category: "transport" }
+              { name: "THSR Sun Moon Lake → Taipei", coords: { lat: 25.0330, lng: 121.5654 }, price: { eur: 25, note: "THSR ca. TWD 1080" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taipei+Hauptbahnhof+Taipei", tip: "Hochgeschwindigkeitszug, 2h, Buggy platzsparend falten", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Taipei 101 Aussichtsplattform", coords: { lat: 25.0338, lng: 121.5645 }, price: { eur: 15, note: "ca. TWD 600" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0338,121.5645", tip: "Lift auf 89. Stock, spektakuläre Aussicht auf Taipei", category: "sehens" }
+              { name: "Taipei 101 Aussichtsplattform", coords: { lat: 25.0338, lng: 121.5645 }, price: { eur: 15, note: "ca. TWD 600" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taipei+101+Taipei", tip: "Lift auf 89. Stock, spektakuläre Aussicht auf Taipei", category: "sehens" }
             ]
           }
         },
@@ -683,11 +693,11 @@ window.TAIWAN = {
           day: 2, date: "2027-01-25", jetlag: false,
           slots: {
             morning: [
-              { name: "Beitou Hot Springs (北投溫泉)", coords: { lat: 25.1369, lng: 121.5071 }, price: { eur: 8, note: "Therme TWD 350" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.1369,121.5071", tip: "Natrium-Radioaktive Quelle — Altersbeschränkung Kinder klären!", category: "wellness" }
+              { name: "Beitou Hot Springs (北投溫泉)", coords: { lat: 25.1369, lng: 121.5071 }, price: { eur: 8, note: "Therme TWD 350" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Beitou+Hot+Springs+Taipei", tip: "Natrium-Radioaktive Quelle — Altersbeschränkung Kinder klären!", category: "wellness" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Danshui Old Street (淡水老街)", coords: { lat: 25.1700, lng: 121.4400 }, price: { eur: 5, note: "Snacks" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.1700,121.4400", tip: "MRT direkte Verbindung, Fischkuchen + Donuts typisch", category: "ausflug" }
+              { name: "Danshui Old Street (淡水老街)", coords: { lat: 25.1700, lng: 121.4400 }, price: { eur: 5, note: "Snacks" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Danshui+Old+Street+Taipei", tip: "MRT direkte Verbindung, Fischkuchen + Donuts typisch", category: "ausflug" }
             ]
           }
         },
@@ -695,11 +705,11 @@ window.TAIWAN = {
           day: 3, date: "2027-01-26", jetlag: false,
           slots: {
             morning: [
-              { name: "Maokong Gondola (貓空纜車)", coords: { lat: 24.9739, lng: 121.5834 }, price: { eur: 3, note: "TWD 120" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=24.9739,121.5834", tip: "Seilbahn übers Teeplantagen-Tal, Glasbodenkabin Option", category: "aktivität" }
+              { name: "Maokong Gondola (貓空纜車)", coords: { lat: 24.9739, lng: 121.5834 }, price: { eur: 3, note: "TWD 120" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola+Taipei", tip: "Seilbahn übers Teeplantagen-Tal, Glasbodenkabin Option", category: "aktivität" }
             ],
             nap: "12:00–14:30",
             afternoon: [
-              { name: "Letzte Shopping-Runde Ximending", coords: { lat: 25.0444, lng: 121.5082 }, price: { eur: 10, note: "Shopping" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0444,121.5082", tip: "Fußgängerzone, gut mit Buggy navigierbar", category: "shopping" }
+              { name: "Letzte Shopping-Runde Ximending", coords: { lat: 25.0444, lng: 121.5082 }, price: { eur: 10, note: "Shopping" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Ximending+Taipei", tip: "Fußgängerzone, gut mit Buggy navigierbar", category: "shopping" }
             ]
           }
         },
@@ -711,7 +721,7 @@ window.TAIWAN = {
           day: 5, date: "2027-01-28", jetlag: false,
           slots: {
             morning: [
-              { name: "Abreise zum Flughafen Taoyuan", coords: { lat: 25.0797, lng: 121.2342 }, price: { eur: 4, note: "MRT" }, buggyFriendly: true, googleMapsUrl: "https://maps.google.com/?q=25.0797,121.2342", tip: "MRT Airport Express, 40min, Gepäck rechtzeitig organisieren", category: "transport" }
+              { name: "Abreise zum Flughafen Taoyuan", coords: { lat: 25.0797, lng: 121.2342 }, price: { eur: 4, note: "MRT" }, buggyFriendly: true, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taoyuan+Airport+Taipei", tip: "MRT Airport Express, 40min, Gepäck rechtzeitig organisieren", category: "transport" }
             ],
             nap: "12:00–14:30",
             afternoon: []
@@ -727,93 +737,93 @@ window.TAIWAN = {
   // ============================================================
   sights: [
     // Phase 1 — Taipei
-    { id: "sight-001", phaseId: 1, name: "Shilin Night Market", type: "base", lat: 25.0881, lng: 121.5240, price: { eur: 8, note: "Essen vor Ort" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.0881,121.5240", tags: ["food","nacht"], openQuestion: null, tip: "Vegane Optionen gut verfügbar" },
-    { id: "sight-002", phaseId: 1, name: "Elephant Mountain", type: "base", lat: 25.0264, lng: 121.5773, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=25.0264,121.5773", tags: ["natur","aussicht"], openQuestion: null, tip: "Treppen — Kind tragen" },
-    { id: "sight-003", phaseId: 1, name: "National Palace Museum", type: "base", lat: 25.1025, lng: 121.5484, price: { eur: 6, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.1025,121.5484", tags: ["museum","kultur"], openQuestion: null, tip: "Jade-Cabbage + Meat Stone sind Highlights" },
-    { id: "sight-004", phaseId: 1, name: "Longshan Temple", type: "base", lat: 25.0370, lng: 121.4997, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.0370,121.4997", tags: ["tempel","kultur"], openQuestion: null, tip: "Buggy-freundlich, ruhige Atmosphäre" },
-    { id: "sight-005", phaseId: 1, name: "Jiufen Old Street", type: "daytrip", lat: 25.1089, lng: 121.8444, price: { eur: 5, note: "Bus + Essen" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=25.1089,121.8444", tags: ["culture","ausflug"], openQuestion: null, tip: "Viele Stufen — mit Kleinkind anstrengend" },
-    { id: "sight-006", phaseId: 1, name: "Taipei 101", type: "base", lat: 25.0338, lng: 121.5645, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.0338,121.5645", tags: ["aussicht","iconic"], openQuestion: null, tip: "Lift auf 89. Stock, Buggy im Lift möglich" },
+    { id: "sight-001", phaseId: 1, name: "Shilin Night Market", type: "base", lat: 25.0881, lng: 121.5240, price: { eur: 8, note: "Essen vor Ort" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Shilin+Night+Market+Taipei", tags: ["food","nacht"], openQuestion: null, tip: "Vegane Optionen gut verfügbar" },
+    { id: "sight-002", phaseId: 1, name: "Elephant Mountain", type: "base", lat: 25.0264, lng: 121.5773, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Elephant+Mountain+Taipei", tags: ["natur","aussicht"], openQuestion: null, tip: "Treppen — Kind tragen" },
+    { id: "sight-003", phaseId: 1, name: "National Palace Museum", type: "base", lat: 25.1025, lng: 121.5484, price: { eur: 6, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei", tags: ["museum","kultur"], openQuestion: null, tip: "Jade-Cabbage + Meat Stone sind Highlights" },
+    { id: "sight-004", phaseId: 1, name: "Longshan Temple", type: "base", lat: 25.0370, lng: 121.4997, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Longshan+Temple+Taipei", tags: ["tempel","kultur"], openQuestion: null, tip: "Buggy-freundlich, ruhige Atmosphäre" },
+    { id: "sight-005", phaseId: 1, name: "Jiufen Old Street", type: "daytrip", lat: 25.1089, lng: 121.8444, price: { eur: 5, note: "Bus + Essen" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Jiufen+Old+Street+Taipei", tags: ["culture","ausflug"], openQuestion: null, tip: "Viele Stufen — mit Kleinkind anstrengend" },
+    { id: "sight-006", phaseId: 1, name: "Taipei 101", type: "base", lat: 25.0338, lng: 121.5645, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taipei+101+Taipei", tags: ["aussicht","iconic"], openQuestion: null, tip: "Lift auf 89. Stock, Buggy im Lift möglich" },
 
     // Phase 2 — Hualien
-    { id: "sight-011", phaseId: 2, name: "Taroko National Park — Swallow Grotto", type: "base", lat: 24.1574, lng: 121.6216, price: { eur: 0, note: "gratis, Helm Pflicht" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1574,121.6216", tags: ["natur","wandern"], openQuestion: null, tip: "Schutzhelm Pflicht — leihen am Eingang" },
-    { id: "sight-012", phaseId: 2, name: "Shakadang Trail", type: "base", lat: 24.1452, lng: 121.6199, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1452,121.6199", tags: ["wandern","natur"], openQuestion: null, tip: "Flacher Weg am Fluss — mit Kind gut machbar" },
-    { id: "sight-013", phaseId: 2, name: "Qixingtan Beach", type: "base", lat: 24.0372, lng: 121.6478, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=24.0372,121.6478", tags: ["strand","sonnenuntergang"], openQuestion: null, tip: "Kieselstrand, Buggy gut möglich" },
-    { id: "sight-014", phaseId: 2, name: "Liyu Lake (鯉魚潭)", type: "base", lat: 23.8979, lng: 121.5500, price: { eur: 3, note: "Boot mieten" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.8979,121.5500", tags: ["natur","see"], openQuestion: null, tip: "Boot mieten, Fahrradweg um den See" },
-    { id: "sight-015", phaseId: 2, name: "Taroko — Tianxiang", type: "base", lat: 24.1879, lng: 121.5983, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=24.1879,121.5983", tags: ["natur","tempel"], openQuestion: null, tip: "Höhepunkt des Taroko-Tals" },
+    { id: "sight-011", phaseId: 2, name: "Taroko National Park — Swallow Grotto", type: "base", lat: 24.1574, lng: 121.6216, price: { eur: 0, note: "gratis, Helm Pflicht" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taroko+National+Park+Swallow+Grotto+Hualien", tags: ["natur","wandern"], openQuestion: null, tip: "Schutzhelm Pflicht — leihen am Eingang" },
+    { id: "sight-012", phaseId: 2, name: "Shakadang Trail", type: "base", lat: 24.1452, lng: 121.6199, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Shakadang+Trail+Hualien", tags: ["wandern","natur"], openQuestion: null, tip: "Flacher Weg am Fluss — mit Kind gut machbar" },
+    { id: "sight-013", phaseId: 2, name: "Qixingtan Beach", type: "base", lat: 24.0372, lng: 121.6478, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Qixingtan+Beach+Hualien", tags: ["strand","sonnenuntergang"], openQuestion: null, tip: "Kieselstrand, Buggy gut möglich" },
+    { id: "sight-014", phaseId: 2, name: "Liyu Lake (鯉魚潭)", type: "base", lat: 23.8979, lng: 121.5500, price: { eur: 3, note: "Boot mieten" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Liyu+Lake+Hualien", tags: ["natur","see"], openQuestion: null, tip: "Boot mieten, Fahrradweg um den See" },
+    { id: "sight-015", phaseId: 2, name: "Taroko — Tianxiang", type: "base", lat: 24.1879, lng: 121.5983, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taroko+Tianxiang+Hualien", tags: ["natur","tempel"], openQuestion: null, tip: "Höhepunkt des Taroko-Tals" },
 
     // Phase 3 — East Rift Valley
-    { id: "sight-021", phaseId: 3, name: "Luye Highland Heißluftballon", type: "base", lat: 23.0681, lng: 121.1437, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.0681,121.1437", tags: ["aktivität","aussicht"], openQuestion: "Kind 2J erlaubt im Ballon?", tip: "Morgens früh los" },
-    { id: "sight-022", phaseId: 3, name: "Chishang Bike Path (伯朗大道)", type: "base", lat: 23.2165, lng: 121.1818, price: { eur: 3, note: "Fahrradmiete" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.2165,121.1818", tags: ["natur","fahrrad"], openQuestion: null, tip: "Ikonische Reisfeld-Strasse" },
-    { id: "sight-023", phaseId: 3, name: "Ruisui Hot Springs", type: "base", lat: 23.4965, lng: 121.3870, price: { eur: 5, note: "Eintritt" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.4965,121.3870", tags: ["wellness"], openQuestion: "Altersbeschränkung Kinder?", tip: "Natrium-Bicarbonat-Quelle" },
-    { id: "sight-024", phaseId: 3, name: "Tropic of Cancer Monument", type: "base", lat: 23.5000, lng: 121.4200, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.5000,121.4200", tags: ["sehens"], openQuestion: null, tip: "Foto-Stop auf dem Weg" },
+    { id: "sight-021", phaseId: 3, name: "Luye Highland Heißluftballon", type: "base", lat: 23.0681, lng: 121.1437, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Luye+Highland+East+Rift+Valley", tags: ["aktivität","aussicht"], openQuestion: "Kind 2J erlaubt im Ballon?", tip: "Morgens früh los" },
+    { id: "sight-022", phaseId: 3, name: "Chishang Bike Path (伯朗大道)", type: "base", lat: 23.2165, lng: 121.1818, price: { eur: 3, note: "Fahrradmiete" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chishang+Bike+Path+East+Rift+Valley", tags: ["natur","fahrrad"], openQuestion: null, tip: "Ikonische Reisfeld-Strasse" },
+    { id: "sight-023", phaseId: 3, name: "Ruisui Hot Springs", type: "base", lat: 23.4965, lng: 121.3870, price: { eur: 5, note: "Eintritt" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Ruisui+Hot+Springs+East+Rift+Valley", tags: ["wellness"], openQuestion: "Altersbeschränkung Kinder?", tip: "Natrium-Bicarbonat-Quelle" },
+    { id: "sight-024", phaseId: 3, name: "Tropic of Cancer Monument", type: "base", lat: 23.5000, lng: 121.4200, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Tropic+of+Cancer+Monument+East+Rift+Valley", tags: ["sehens"], openQuestion: null, tip: "Foto-Stop auf dem Weg" },
 
     // Phase 4 — Taitung
-    { id: "sight-031", phaseId: 4, name: "Xiaoyeliu Geopark (小野柳)", type: "base", lat: 22.8267, lng: 121.1417, price: { eur: 2, note: "TWD 80" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.8267,121.1417", tags: ["natur","geologie"], openQuestion: null, tip: "Bizarre Felsformationen, gut für Kleinkinder" },
-    { id: "sight-032", phaseId: 4, name: "Jhihben Hot Springs", type: "base", lat: 22.7158, lng: 120.9978, price: { eur: 8, note: "Hotel Therme" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.7158,120.9978", tags: ["wellness"], openQuestion: null, tip: "Schwefelquelle, Indoorpool" },
-    { id: "sight-033", phaseId: 4, name: "Green Island Tagesausflug", type: "daytrip", lat: 22.6715, lng: 121.4869, price: { eur: 25, note: "Fähre + Moped" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.6715,121.4869", tags: ["ausflug","insel"], openQuestion: null, tip: "30min Fähre, Moped auf der Insel" },
-    { id: "sight-034", phaseId: 4, name: "Taitung Seashore Park", type: "base", lat: 22.7500, lng: 121.1600, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.7500,121.1600", tags: ["strand","natur"], openQuestion: null, tip: "Schöne Strandpromenade" },
+    { id: "sight-031", phaseId: 4, name: "Xiaoyeliu Geopark (小野柳)", type: "base", lat: 22.8267, lng: 121.1417, price: { eur: 2, note: "TWD 80" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Xiaoyeliu+Geopark+Taitung", tags: ["natur","geologie"], openQuestion: null, tip: "Bizarre Felsformationen, gut für Kleinkinder" },
+    { id: "sight-032", phaseId: 4, name: "Jhihben Hot Springs", type: "base", lat: 22.7158, lng: 120.9978, price: { eur: 8, note: "Hotel Therme" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Jhihben+Hot+Springs+Taitung", tags: ["wellness"], openQuestion: null, tip: "Schwefelquelle, Indoorpool" },
+    { id: "sight-033", phaseId: 4, name: "Green Island Tagesausflug", type: "daytrip", lat: 22.6715, lng: 121.4869, price: { eur: 25, note: "Fähre + Moped" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Green+Island+Taitung", tags: ["ausflug","insel"], openQuestion: null, tip: "30min Fähre, Moped auf der Insel" },
+    { id: "sight-034", phaseId: 4, name: "Taitung Seashore Park", type: "base", lat: 22.7500, lng: 121.1600, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taitung+Seashore+Park+Taitung", tags: ["strand","natur"], openQuestion: null, tip: "Schöne Strandpromenade" },
 
     // Phase 5 — Xiaoliuqiu
-    { id: "sight-041", phaseId: 5, name: "Vase Rock (花瓶岩)", type: "base", lat: 22.3457, lng: 120.3713, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.3457,120.3713", tags: ["natur","iconic"], openQuestion: null, tip: "Wahrzeichen der Insel" },
-    { id: "sight-042", phaseId: 5, name: "Sunset Beach (落日亭)", type: "base", lat: 22.3384, lng: 120.3684, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.3384,120.3684", tags: ["strand","sonnenuntergang"], openQuestion: null, tip: "Schönster Sonnenuntergang der Reise" },
-    { id: "sight-043", phaseId: 5, name: "Glasbodenboot Tour", type: "base", lat: 22.3400, lng: 120.3700, price: { eur: 18, note: "TWD 750" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tags: ["aktivität","meer"], openQuestion: "Altersbeschränkung Kind 2J?", tip: "Im Voraus buchen" },
-    { id: "sight-044", phaseId: 5, name: "Schildkröten-Schnorcheln", type: "base", lat: 22.3400, lng: 120.3700, price: { eur: 15, note: "TWD 600" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", tags: ["aktivität","meer"], openQuestion: null, tip: "Abwechseln: einer schnorchelt, anderer mit Kind" },
-    { id: "sight-045", phaseId: 5, name: "Meerschildkröten-Spot", type: "base", lat: 22.3420, lng: 120.3720, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=22.3420,120.3720", tags: ["natur","meer"], openQuestion: null, tip: "Schildkröten kommen ans Ufer — kein Berühren!" },
+    { id: "sight-041", phaseId: 5, name: "Vase Rock (花瓶岩)", type: "base", lat: 22.3457, lng: 120.3713, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Vase+Rock+Xiaoliuqiu", tags: ["natur","iconic"], openQuestion: null, tip: "Wahrzeichen der Insel" },
+    { id: "sight-042", phaseId: 5, name: "Sunset Beach (落日亭)", type: "base", lat: 22.3384, lng: 120.3684, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sunset+Beach+Xiaoliuqiu", tags: ["strand","sonnenuntergang"], openQuestion: null, tip: "Schönster Sonnenuntergang der Reise" },
+    { id: "sight-043", phaseId: 5, name: "Glasbodenboot Tour", type: "base", lat: 22.3400, lng: 120.3700, price: { eur: 18, note: "TWD 750" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Glasbodenboot+Tour+Xiaoliuqiu", tags: ["aktivität","meer"], openQuestion: "Altersbeschränkung Kind 2J?", tip: "Im Voraus buchen" },
+    { id: "sight-044", phaseId: 5, name: "Schildkröten-Schnorcheln", type: "base", lat: 22.3400, lng: 120.3700, price: { eur: 15, note: "TWD 600" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Schildkroten+Schnorcheln+Xiaoliuqiu", tags: ["aktivität","meer"], openQuestion: null, tip: "Abwechseln: einer schnorchelt, anderer mit Kind" },
+    { id: "sight-045", phaseId: 5, name: "Meerschildkröten-Spot", type: "base", lat: 22.3420, lng: 120.3720, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Meerschildkroten+Spot+Xiaoliuqiu", tags: ["natur","meer"], openQuestion: null, tip: "Schildkröten kommen ans Ufer — kein Berühren!" },
 
     // Phase 6 — Kenting
-    { id: "sight-051", phaseId: 6, name: "Kenting National Park Visitor Center", type: "base", lat: 21.9540, lng: 120.8015, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=21.9540,120.8015", tags: ["natur","info"], openQuestion: null, tip: "Gute Infos + Karte des Parks" },
-    { id: "sight-052", phaseId: 6, name: "White Sand Beach (白沙灣)", type: "base", lat: 21.9467, lng: 120.7856, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=21.9467,120.7856", tags: ["strand"], openQuestion: null, tip: "Feiner weißer Sand, flaches Wasser für Kinder" },
-    { id: "sight-053", phaseId: 6, name: "Little Bay (小灣)", type: "base", lat: 21.9445, lng: 120.8089, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=21.9445,120.8089", tags: ["strand"], openQuestion: null, tip: "Ruhiger, gut geschützter Strand" },
-    { id: "sight-054", phaseId: 6, name: "Maobitou Park (猫鼻頭)", type: "base", lat: 21.9000, lng: 120.7300, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=21.9000,120.7300", tags: ["natur","südlichsterpunkt"], openQuestion: null, tip: "Südlichster Punkt Taiwans" },
-    { id: "sight-055", phaseId: 6, name: "Eluanbi Lighthouse (鵝鑾鼻)", type: "base", lat: 21.9000, lng: 120.8500, price: { eur: 1, note: "TWD 40" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=21.9000,120.8500", tags: ["sehens","leuchtturm"], openQuestion: null, tip: "Hellster Leuchtturm Asiens, buggy-freundlich" },
+    { id: "sight-051", phaseId: 6, name: "Kenting National Park Visitor Center", type: "base", lat: 21.9540, lng: 120.8015, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+National+Park+Visitor+Center+Kenting", tags: ["natur","info"], openQuestion: null, tip: "Gute Infos + Karte des Parks" },
+    { id: "sight-052", phaseId: 6, name: "White Sand Beach (白沙灣)", type: "base", lat: 21.9467, lng: 120.7856, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=White+Sand+Beach+Kenting", tags: ["strand"], openQuestion: null, tip: "Feiner weißer Sand, flaches Wasser für Kinder" },
+    { id: "sight-053", phaseId: 6, name: "Little Bay (小灣)", type: "base", lat: 21.9445, lng: 120.8089, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Little+Bay+Kenting", tags: ["strand"], openQuestion: null, tip: "Ruhiger, gut geschützter Strand" },
+    { id: "sight-054", phaseId: 6, name: "Maobitou Park (猫鼻頭)", type: "base", lat: 21.9000, lng: 120.7300, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Maobitou+Park+Kenting", tags: ["natur","südlichsterpunkt"], openQuestion: null, tip: "Südlichster Punkt Taiwans" },
+    { id: "sight-055", phaseId: 6, name: "Eluanbi Lighthouse (鵝鑾鼻)", type: "base", lat: 21.9000, lng: 120.8500, price: { eur: 1, note: "TWD 40" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Eluanbi+Lighthouse+Kenting", tags: ["sehens","leuchtturm"], openQuestion: null, tip: "Hellster Leuchtturm Asiens, buggy-freundlich" },
 
     // Phase 7 — Tainan
-    { id: "sight-061", phaseId: 7, name: "Chihkan Tower (赤崁樓)", type: "base", lat: 22.9969, lng: 120.2033, price: { eur: 3, note: "TWD 100" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.9969,120.2033", tags: ["museum","geschichte"], openQuestion: null, tip: "Niederländisches Fort, gut restauriert" },
-    { id: "sight-062", phaseId: 7, name: "Confucius Temple Tainan", type: "base", lat: 23.0016, lng: 120.2036, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.0016,120.2036", tags: ["tempel","geschichte"], openQuestion: null, tip: "Ältester Konfuzius-Tempel Taiwans" },
-    { id: "sight-063", phaseId: 7, name: "Anping Old Fort (安平古堡)", type: "base", lat: 23.0026, lng: 120.1576, price: { eur: 3, note: "TWD 100" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.0026,120.1576", tags: ["museum","geschichte"], openQuestion: null, tip: "Ältestes Fort Taiwans, schöne Aussicht" },
-    { id: "sight-064", phaseId: 7, name: "Tainan Night Market (花園夜市)", type: "base", lat: 22.9874, lng: 120.1953, price: { eur: 8, note: "Essen" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.9874,120.1953", tags: ["food","nacht"], openQuestion: null, tip: "Nur Do/Sa/So, riesig und günstig" },
-    { id: "sight-065", phaseId: 7, name: "Chimei Museum (奇美博物館)", type: "base", lat: 22.9637, lng: 120.1943, price: { eur: 5, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=22.9637,120.1943", tags: ["museum","kunst"], openQuestion: null, tip: "Fantastische Sammlung, Buggy ideal" },
+    { id: "sight-061", phaseId: 7, name: "Chihkan Tower (赤崁樓)", type: "base", lat: 22.9969, lng: 120.2033, price: { eur: 3, note: "TWD 100" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chihkan+Tower+Tainan", tags: ["museum","geschichte"], openQuestion: null, tip: "Niederländisches Fort, gut restauriert" },
+    { id: "sight-062", phaseId: 7, name: "Confucius Temple Tainan", type: "base", lat: 23.0016, lng: 120.2036, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Confucius+Temple+Tainan", tags: ["tempel","geschichte"], openQuestion: null, tip: "Ältester Konfuzius-Tempel Taiwans" },
+    { id: "sight-063", phaseId: 7, name: "Anping Old Fort (安平古堡)", type: "base", lat: 23.0026, lng: 120.1576, price: { eur: 3, note: "TWD 100" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Anping+Old+Fort+Tainan", tags: ["museum","geschichte"], openQuestion: null, tip: "Ältestes Fort Taiwans, schöne Aussicht" },
+    { id: "sight-064", phaseId: 7, name: "Tainan Night Market (花園夜市)", type: "base", lat: 22.9874, lng: 120.1953, price: { eur: 8, note: "Essen" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Tainan+Night+Market+Tainan", tags: ["food","nacht"], openQuestion: null, tip: "Nur Do/Sa/So, riesig und günstig" },
+    { id: "sight-065", phaseId: 7, name: "Chimei Museum (奇美博物館)", type: "base", lat: 22.9637, lng: 120.1943, price: { eur: 5, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Chimei+Museum+Tainan", tags: ["museum","kunst"], openQuestion: null, tip: "Fantastische Sammlung, Buggy ideal" },
 
     // Phase 8 — Alishan
-    { id: "sight-071", phaseId: 8, name: "Alishan Forest Railway", type: "base", lat: 23.5118, lng: 120.8039, price: { eur: 8, note: "TWD 300" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", tags: ["aktivität","historic"], openQuestion: "Buggy im Zug erlaubt?", tip: "Historische Bergbahn" },
-    { id: "sight-072", phaseId: 8, name: "Sacred Tree Area", type: "base", lat: 23.5107, lng: 120.8042, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.5107,120.8042", tags: ["natur","wald"], openQuestion: null, tip: "Uralte Zypressenallee" },
-    { id: "sight-073", phaseId: 8, name: "Sunrise Viewing Zhushan", type: "base", lat: 23.5050, lng: 120.8000, price: { eur: 3, note: "Bergbahn TWD 100" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5050,120.8000", tags: ["natur","sonnenaufgang"], openQuestion: null, tip: "03:30 Uhr aufstehen! Kind im Tragetuch" },
-    { id: "sight-074", phaseId: 8, name: "Fenqihu Old Street", type: "daytrip", lat: 23.5647, lng: 120.7034, price: { eur: 5, note: "Zug + Essen" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.5647,120.7034", tags: ["ausflug","historic"], openQuestion: null, tip: "Charmantes Bergstädtchen, vegane Bento-Boxen" },
-    { id: "sight-075", phaseId: 8, name: "Alishan Waldpfade", type: "base", lat: 23.5118, lng: 120.8039, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", tags: ["wandern","natur"], openQuestion: null, tip: "Fleecejacke für Kind — kalt auf 2300m" },
+    { id: "sight-071", phaseId: 8, name: "Alishan Forest Railway", type: "base", lat: 23.5118, lng: 120.8039, price: { eur: 8, note: "TWD 300" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Forest+Railway+Alishan", tags: ["aktivität","historic"], openQuestion: "Buggy im Zug erlaubt?", tip: "Historische Bergbahn" },
+    { id: "sight-072", phaseId: 8, name: "Sacred Tree Area", type: "base", lat: 23.5107, lng: 120.8042, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sacred+Tree+Area+Alishan", tags: ["natur","wald"], openQuestion: null, tip: "Uralte Zypressenallee" },
+    { id: "sight-073", phaseId: 8, name: "Sunrise Viewing Zhushan", type: "base", lat: 23.5050, lng: 120.8000, price: { eur: 3, note: "Bergbahn TWD 100" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Zhushan+Sunrise+Alishan", tags: ["natur","sonnenaufgang"], openQuestion: null, tip: "Bergbahn ab ~08:00 — früh beim Bahnhof sein. Kind im Tragetuch" },
+    { id: "sight-074", phaseId: 8, name: "Fenqihu Old Street", type: "daytrip", lat: 23.5647, lng: 120.7034, price: { eur: 5, note: "Zug + Essen" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Fenqihu+Old+Street+Alishan", tags: ["ausflug","historic"], openQuestion: null, tip: "Charmantes Bergstädtchen, vegane Bento-Boxen" },
+    { id: "sight-075", phaseId: 8, name: "Alishan Waldpfade", type: "base", lat: 23.5118, lng: 120.8039, price: { eur: 0, note: "gratis" }, buggyFriendly: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Waldpfade+Alishan", tags: ["wandern","natur"], openQuestion: null, tip: "Fleecejacke für Kind — kalt auf 2300m" },
 
     // Phase 9 — Sun Moon Lake
-    { id: "sight-081", phaseId: 9, name: "Sun Moon Lake Cableway", type: "base", lat: 23.8460, lng: 120.9198, price: { eur: 6, note: "TWD 250" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.8460,120.9198", tags: ["aktivität","aussicht"], openQuestion: null, tip: "Gondel über den See, Kleinkinder lieben es" },
-    { id: "sight-082", phaseId: 9, name: "Wenwu Temple", type: "base", lat: 23.8840, lng: 120.9169, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.8840,120.9169", tags: ["tempel","aussicht"], openQuestion: null, tip: "Imposanter Tempel, spektakuläre Aussicht" },
-    { id: "sight-083", phaseId: 9, name: "Formosan Aboriginal Culture Village", type: "daytrip", lat: 23.8467, lng: 120.9244, price: { eur: 15, note: "TWD 620" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.8467,120.9244", tags: ["ausflug","kultur","freizeitpark"], openQuestion: null, tip: "Vergnügungspark + Kulturpark, Kind-freundlich" },
-    { id: "sight-084", phaseId: 9, name: "Seerunde Sun Moon Lake (Boot)", type: "base", lat: 23.8650, lng: 120.9092, price: { eur: 5, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=23.8650,120.9092", tags: ["aktivität","see"], openQuestion: null, tip: "Schiff-Tour ca. 45min" },
+    { id: "sight-081", phaseId: 9, name: "Sun Moon Lake Cableway", type: "base", lat: 23.8460, lng: 120.9198, price: { eur: 6, note: "TWD 250" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Cableway+Sun+Moon+Lake", tags: ["aktivität","aussicht"], openQuestion: null, tip: "Gondel über den See, Kleinkinder lieben es" },
+    { id: "sight-082", phaseId: 9, name: "Wenwu Temple", type: "base", lat: 23.8840, lng: 120.9169, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Wenwu+Temple+Sun+Moon+Lake", tags: ["tempel","aussicht"], openQuestion: null, tip: "Imposanter Tempel, spektakuläre Aussicht" },
+    { id: "sight-083", phaseId: 9, name: "Formosan Aboriginal Culture Village", type: "daytrip", lat: 23.8467, lng: 120.9244, price: { eur: 15, note: "TWD 620" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Formosan+Aboriginal+Culture+Village+Sun+Moon+Lake", tags: ["ausflug","kultur","freizeitpark"], openQuestion: null, tip: "Vergnügungspark + Kulturpark, Kind-freundlich" },
+    { id: "sight-084", phaseId: 9, name: "Seerunde Sun Moon Lake (Boot)", type: "base", lat: 23.8650, lng: 120.9092, price: { eur: 5, note: "TWD 200" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Boot+Sun+Moon+Lake", tags: ["aktivität","see"], openQuestion: null, tip: "Schiff-Tour ca. 45min" },
 
     // Phase 10 — Taipei Rückreise
-    { id: "sight-091", phaseId: 10, name: "Taipei 101 (Rückreise)", type: "base", lat: 25.0338, lng: 121.5645, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.0338,121.5645", tags: ["aussicht","iconic"], openQuestion: null, tip: "Lift 89. Stock, Buggy möglich" },
-    { id: "sight-092", phaseId: 10, name: "Beitou Hot Springs", type: "base", lat: 25.1369, lng: 121.5071, price: { eur: 8, note: "TWD 350" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.1369,121.5071", tags: ["wellness"], openQuestion: "Altersbeschränkung Kinder prüfen", tip: "Radio-aktive Natrium-Quelle — einzigartig" },
-    { id: "sight-093", phaseId: 10, name: "Maokong Gondola (貓空)", type: "base", lat: 24.9739, lng: 121.5834, price: { eur: 3, note: "TWD 120" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=24.9739,121.5834", tags: ["aktivität","aussicht"], openQuestion: null, tip: "Glasbodenkabin, Teeplantagen-Aussicht" },
-    { id: "sight-094", phaseId: 10, name: "Danshui Old Street", type: "daytrip", lat: 25.1700, lng: 121.4400, price: { eur: 5, note: "Snacks" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.1700,121.4400", tags: ["ausflug","historic"], openQuestion: null, tip: "MRT direkte Verbindung, fußgängerfreundlich" },
-    { id: "sight-095", phaseId: 10, name: "Ximending Fußgängerzone", type: "base", lat: 25.0444, lng: 121.5082, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://maps.google.com/?q=25.0444,121.5082", tags: ["shopping","food"], openQuestion: null, tip: "Jugendkultur, vegane Restaurants vorhanden" }
+    { id: "sight-091", phaseId: 10, name: "Taipei 101 (Rückreise)", type: "base", lat: 25.0338, lng: 121.5645, price: { eur: 15, note: "TWD 600" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taipei+101+Taipei", tags: ["aussicht","iconic"], openQuestion: null, tip: "Lift 89. Stock, Buggy möglich" },
+    { id: "sight-092", phaseId: 10, name: "Beitou Hot Springs", type: "base", lat: 25.1369, lng: 121.5071, price: { eur: 8, note: "TWD 350" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Beitou+Hot+Springs+Taipei", tags: ["wellness"], openQuestion: "Altersbeschränkung Kinder prüfen", tip: "Radio-aktive Natrium-Quelle — einzigartig" },
+    { id: "sight-093", phaseId: 10, name: "Maokong Gondola (貓空)", type: "base", lat: 24.9739, lng: 121.5834, price: { eur: 3, note: "TWD 120" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola+Taipei", tags: ["aktivität","aussicht"], openQuestion: null, tip: "Glasbodenkabin, Teeplantagen-Aussicht" },
+    { id: "sight-094", phaseId: 10, name: "Danshui Old Street", type: "daytrip", lat: 25.1700, lng: 121.4400, price: { eur: 5, note: "Snacks" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Danshui+Old+Street+Taipei", tags: ["ausflug","historic"], openQuestion: null, tip: "MRT direkte Verbindung, fußgängerfreundlich" },
+    { id: "sight-095", phaseId: 10, name: "Ximending Fußgängerzone", type: "base", lat: 25.0444, lng: 121.5082, price: { eur: 0, note: "gratis" }, buggyFriendly: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Ximending+Taipei", tags: ["shopping","food"], openQuestion: null, tip: "Jugendkultur, vegane Restaurants vorhanden" }
   ],
 
   // ============================================================
   // restaurants — vegetarisch/vegan nach Phase
   // ============================================================
   restaurants: [
-    { id: "rest-001", phaseId: 1,  name: "Loving Hut Taipei (Da'an)",         type: "vegan",         pricePerPerson: { eur: 6 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=25.0390,121.5500", note: "International vegane Kette, sehr gute Qualität" },
-    { id: "rest-002", phaseId: 1,  name: "HERBIVORE Taipei",                   type: "vegan",         pricePerPerson: { eur: 8 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=25.0440,121.5270", note: "Hipster veganes Café, englische Karte" },
-    { id: "rest-003", phaseId: 2,  name: "Vege Creek Hualien",                 type: "vegan",         pricePerPerson: { eur: 5 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", note: "Lokale vegane Bowls, günstig und frisch" },
-    { id: "rest-004", phaseId: 2,  name: "Hualien Buddhist Vegetarian",        type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=23.9769,121.6044", note: "Klassische taiwanesische Tempel-Küche" },
-    { id: "rest-005", phaseId: 3,  name: "East Rift Valley Organic Farm Stay", type: "veg-option",    pricePerPerson: { eur: 7 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=23.4700,121.3900", note: "Bio-Farmküche, viele vegetarische Optionen" },
-    { id: "rest-006", phaseId: 4,  name: "Taitung Vegetarische Buffet",        type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=22.7583,121.1444", note: "All-You-Can-Eat vegetarisch, Tempelküche-Stil" },
-    { id: "rest-007", phaseId: 5,  name: "Xiaoliuqiu Beach Café (vegan menu)", type: "veg-option",    pricePerPerson: { eur: 6 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=22.3400,120.3700", note: "Hafennähe, frische Smoothie Bowls" },
-    { id: "rest-008", phaseId: 6,  name: "Vegan Heaven Kenting",               type: "vegan",         pricePerPerson: { eur: 7 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=21.9400,120.8500", note: "Speziell vegane Küche in Kenting, beliebt" },
-    { id: "rest-009", phaseId: 6,  name: "Kenting Night Market (vegan stalls)", type: "veg-option",   pricePerPerson: { eur: 5 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=21.9600,120.8350", note: "Viele vegane Stände erkennbar am 素 Symbol" },
-    { id: "rest-010", phaseId: 7,  name: "Grandma Nitti's Kitchen Tainan",    type: "veg-option",    pricePerPerson: { eur: 8 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=22.9998,120.2270", note: "International, vegane Optionen vorhanden" },
-    { id: "rest-011", phaseId: 7,  name: "Shang Yan Buddhist Vegetarian",     type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=22.9969,120.2033", note: "Günstig, authentisch, Tempel-Atmosphäre" },
-    { id: "rest-012", phaseId: 8,  name: "Alishan Organic Teahouse",          type: "veg-option",    pricePerPerson: { eur: 6 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=23.5118,120.8039", note: "Tee + leichte vegane Bento-Snacks" },
-    { id: "rest-013", phaseId: 9,  name: "Sun Moon Lake Veggie Restaurant",   type: "vegetarisch",   pricePerPerson: { eur: 7 },  veganSymbol: false, googleMapsUrl: "https://maps.google.com/?q=23.8650,120.9092", note: "Seeblick, lokale Spezialitäten vegetarisch" },
-    { id: "rest-014", phaseId: 10, name: "Loving Hut Taipei (Shida)",         type: "vegan",         pricePerPerson: { eur: 6 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=25.0220,121.5310", note: "Nähe Universität, günstiger als City-Center" },
-    { id: "rest-015", phaseId: 10, name: "Mianto Vegan Taipei",               type: "vegan",         pricePerPerson: { eur: 9 },  veganSymbol: true,  googleMapsUrl: "https://maps.google.com/?q=25.0440,121.5200", note: "Fine Dining vegan, besonderer Abschiedsabend" }
+    { id: "rest-001", phaseId: 1,  name: "Loving Hut Taipei (Da'an)",         type: "vegan",         pricePerPerson: { eur: 6 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Loving+Hut+Taipei+Taipei", note: "International vegane Kette, sehr gute Qualität" },
+    { id: "rest-002", phaseId: 1,  name: "HERBIVORE Taipei",                   type: "vegan",         pricePerPerson: { eur: 8 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=HERBIVORE+Taipei+Taipei", note: "Hipster veganes Café, englische Karte" },
+    { id: "rest-003", phaseId: 2,  name: "Vege Creek Hualien",                 type: "vegan",         pricePerPerson: { eur: 5 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Vege+Creek+Hualien+Hualien", note: "Lokale vegane Bowls, günstig und frisch" },
+    { id: "rest-004", phaseId: 2,  name: "Hualien Buddhist Vegetarian",        type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hualien+Buddhist+Vegetarian+Hualien", note: "Klassische taiwanesische Tempel-Küche" },
+    { id: "rest-005", phaseId: 3,  name: "East Rift Valley Organic Farm Stay", type: "veg-option",    pricePerPerson: { eur: 7 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=East+Rift+Valley+Organic+Farm+East+Rift+Valley", note: "Bio-Farmküche, viele vegetarische Optionen" },
+    { id: "rest-006", phaseId: 4,  name: "Taitung Vegetarische Buffet",        type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Taitung+Vegetarische+Buffet+Taitung", note: "All-You-Can-Eat vegetarisch, Tempelküche-Stil" },
+    { id: "rest-007", phaseId: 5,  name: "Xiaoliuqiu Beach Café (vegan menu)", type: "veg-option",    pricePerPerson: { eur: 6 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Xiaoliuqiu+Beach+Cafe+Xiaoliuqiu", note: "Hafennähe, frische Smoothie Bowls" },
+    { id: "rest-008", phaseId: 6,  name: "Vegan Heaven Kenting",               type: "vegan",         pricePerPerson: { eur: 7 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Vegan+Heaven+Kenting+Kenting", note: "Speziell vegane Küche in Kenting, beliebt" },
+    { id: "rest-009", phaseId: 6,  name: "Kenting Night Market (vegan stalls)", type: "veg-option",   pricePerPerson: { eur: 5 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Kenting+Night+Market+Kenting", note: "Viele vegane Stände erkennbar am 素 Symbol" },
+    { id: "rest-010", phaseId: 7,  name: "Grandma Nitti's Kitchen Tainan",    type: "veg-option",    pricePerPerson: { eur: 8 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Grandma+Nittis+Kitchen+Tainan", note: "International, vegane Optionen vorhanden" },
+    { id: "rest-011", phaseId: 7,  name: "Shang Yan Buddhist Vegetarian",     type: "vegetarisch",   pricePerPerson: { eur: 4 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Shang+Yan+Buddhist+Vegetarian+Tainan", note: "Günstig, authentisch, Tempel-Atmosphäre" },
+    { id: "rest-012", phaseId: 8,  name: "Alishan Organic Teahouse",          type: "veg-option",    pricePerPerson: { eur: 6 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Alishan+Organic+Teahouse+Alishan", note: "Tee + leichte vegane Bento-Snacks" },
+    { id: "rest-013", phaseId: 9,  name: "Sun Moon Lake Veggie Restaurant",   type: "vegetarisch",   pricePerPerson: { eur: 7 },  veganSymbol: false, googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sun+Moon+Lake+Veggie+Restaurant+Sun+Moon+Lake", note: "Seeblick, lokale Spezialitäten vegetarisch" },
+    { id: "rest-014", phaseId: 10, name: "Loving Hut Taipei (Shida)",         type: "vegan",         pricePerPerson: { eur: 6 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Loving+Hut+Taipei+Shida+Taipei", note: "Nähe Universität, günstiger als City-Center" },
+    { id: "rest-015", phaseId: 10, name: "Mianto Vegan Taipei",               type: "vegan",         pricePerPerson: { eur: 9 },  veganSymbol: true,  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Mianto+Vegan+Taipei+Taipei", note: "Fine Dining vegan, besonderer Abschiedsabend" }
   ],
 
   // ============================================================
