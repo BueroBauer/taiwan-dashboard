@@ -36,14 +36,14 @@ window.videosModule = (function () {
     var isPlaceholder = video.youtubeId.indexOf('PLACEHOLDER') !== -1;
     var thumbHtml;
     if (isPlaceholder) {
-      thumbHtml = '<div class="vid-thumb-placeholder"></div>';
+      thumbHtml = '<div class="vid-thumb-placeholder"><span class="vid-placeholder-label">Noch kein Video gefunden</span></div>';
     } else {
       thumbHtml = '<img class="vid-thumb" src="https://img.youtube.com/vi/' + video.youtubeId + '/hqdefault.jpg" alt="' + video.title + '" loading="lazy" />';
     }
     return '<div class="vid-card" data-youtube-id="' + video.youtubeId + '">' +
       '<div class="vid-thumb-wrap">' +
         thumbHtml +
-        '<div class="vid-play-btn" aria-label="Video abspielen">\u25B6</div>' +
+        '<div class="vid-play-btn' + (isPlaceholder ? ' vid-play-btn--search' : '') + '" aria-label="' + (isPlaceholder ? 'Auf YouTube suchen' : 'Video abspielen') + '">' + (isPlaceholder ? '\uD83D\uDD0D auf YouTube suchen' : '\u25B6') + '</div>' +
       '</div>' +
       '<div class="vid-title">' + video.title + '</div>' +
     '</div>';

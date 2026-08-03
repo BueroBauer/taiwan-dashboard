@@ -215,6 +215,9 @@
     html += '<span class="tl-phase-emoji">' + phase.emoji + '</span>';
     html += '<span class="tl-phase-name">Phase ' + phase.id + ': ' + phase.name + '</span>';
     html += '<span class="tl-badge tl-badge--nights">' + phase.nights + ' Nächte</span>';
+    if (phase.avgTemp !== undefined && phase.avgTemp !== null) {
+      html += '<span class="tl-temp-badge">\uD83C\uDF21\uFE0F ' + phase.avgTemp + '\u00B0C \u00D8</span>';
+    }
     if (phase.earlyBook) {
       html += '<span class="tl-badge tl-badge--warn">⚠️ Früh buchen!</span>';
     }
