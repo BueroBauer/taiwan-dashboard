@@ -24,6 +24,15 @@ Passwort: sri30
 
 Alle Reisedaten liegen in `js/data.js`. Ändern + committen → automatisch live auf GitHub Pages.
 
+## Sicherheit — Warndienst + Bebenskala
+
+Die Section `#sicherheit` bündelt zwei Dinge:
+
+- **Warndienst** — politische und militärische Lage. Ampel, Referenzband PLA-Flugzeuge, offene Auslöser, Kalender bis Reiseende, Quellenliste. Gepflegt über den Skill `/taiwan-watch`, Werte stehen in `data.js → warndienst`. Verlauf liegt in `../taiwan-watch-log.md`.
+- **Bebenskala** — vierstufiges Regionalrisiko (niedrig / mittel / erhöht / hoch), Kennzahlen, Verhalten mit Kleinkind, Warnkanäle. Werte in `data.js → seismik`.
+
+Jede Reisephase trägt ihre Bebenstufe zusätzlich als Badge in der Timeline, das Detail erscheint beim Aufklappen. Zuordnung über `seismik.phases[phaseId]`, Schlüssel entsprechen `phases[].id`.
+
 ## Tech Stack
 
 - Leaflet 1.9.4 (Karte)

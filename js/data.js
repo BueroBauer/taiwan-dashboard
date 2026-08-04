@@ -1142,6 +1142,163 @@ window.TAIWAN = {
         { label: "Confucius Temple Tainan",   eur: 0,  gratis: true,  phaseId: 7 }
       ]
     }
+  },
+
+  // ============================================================
+  // warndienst — Politischer Frühwarndienst
+  // Quelle: Skill /taiwan-watch · Log: Winterurlaub-2026/taiwan-watch-log.md
+  // Update: level + current + lastCheck nach jedem Abruf hier eintragen
+  // ============================================================
+  warndienst: {
+    lastCheck: "2026-08-02",
+    level: "gruen",
+
+    // Ampelstufen — Definition + Handlung
+    levels: [
+      { key: "gruen",  icon: "🟢", label: "Normal",           color: "#4a9e4a",
+        trigger: "PLA unter 25 Flugzeuge/Tag, keine Sperrzone, Reisewarnung unverändert",
+        action:  "Nichts tun. Abruf einmal im Monat, ab Oktober wöchentlich." },
+      { key: "gelb",   icon: "🟡", label: "Erhöht",           color: "#e8c547",
+        trigger: "25–45 Flugzeuge/Tag oder politischer Trigger aktiv (Waffenfreigabe, Besuch, Rede)",
+        action:  "Wöchentlich prüfen. Umbuchungsbedingungen des Tickets bereitlegen." },
+      { key: "orange", icon: "🟠", label: "Übung läuft",      color: "#F59E0B",
+        trigger: "45+ Flugzeuge/Tag oder aktive NOTAM-Sperrzone rund um Taiwan",
+        action:  "Täglich prüfen. Flugstatus TPE checken, Rückflugpuffer aktivieren, Kontakt Österreich Büro Taipei notieren." },
+      { key: "rot",    icon: "🔴", label: "Entscheidung nötig", color: "#EF4444",
+        trigger: "BMEIA oder Auswärtiges Amt ändert Warnstufe für Taiwan",
+        action:  "Umbuchung oder Abbruch entscheiden. Versicherung sofort kontaktieren." }
+    ],
+
+    // Aktueller Stand — aus letztem Abruf
+    current: {
+      plaAir:     5,
+      plaSea:     8,
+      plaOfficial: 2,
+      zone:       "keine",
+      trigger:    "keiner aktiv",
+      advisory:   "BMEIA + Auswärtiges Amt unverändert, Militär nicht als Warngrund gelistet",
+      note:       "Erstabruf, Baseline. Deutlich unter Normalband, ruhige Phase.",
+      previous:   "01.08. → 5 Flz / 10 Sch · 29.07. → 8 Flz / 7 Sch · 27.07. → 3 Flz / 7 Sch"
+    },
+
+    // Referenzband PLA-Flugzeuge pro Tag
+    baseline: [
+      { range: "unter 15", label: "ruhig",      color: "#4a9e4a" },
+      { range: "15–25",    label: "normal",     color: "#4a9e4a" },
+      { range: "25–45",    label: "erhöht",     color: "#e8c547" },
+      { range: "45–70",    label: "Übung",      color: "#F59E0B" },
+      { range: "über 70",  label: "Großübung",  color: "#EF4444" }
+    ],
+
+    // Offene politische Trigger mit Wirkung vor der Reise
+    triggers: [
+      { title:  "14-Mrd-USD-Waffenpaket blockiert",
+        status: "offen",
+        detail: "Lai forderte am 18.06.2026 öffentlich schnelle Freigabe. USA pausierten im Mai 2026 wegen Munitionsbedarf Iran-Krieg. Freigabe ist ein klassischer Auslöser für eine PLA-Übung.",
+        window: "Zeitpunkt unbekannt, jederzeit möglich" },
+      { title:  "Erste F-16 Auslieferung an Taiwan",
+        status: "terminiert",
+        detail: "Größter Einzelposten im Backlog, 8 Mrd USD. Physische Ankunft von Kampfjets wiegt schwerer als jede Ankündigung.",
+        window: "ab September 2026, drei Monate vor Abflug" }
+    ],
+
+    // Fixe Kalendertermine bis Reiseende
+    calendar: [
+      { date: "2026-09", event: "F-16-Ankunft",              detail: "Erste Auslieferung laut Verteidigungsminister Koo",                    risk: "mittel" },
+      { date: "2026-10-10", event: "Nationalfeiertagsrede",  detail: "2024 folgte Joint Sword-2024B direkt auf die Rede",                    risk: "hoch" },
+      { date: "2026-12-01", event: "Abflug Wien → Taipei",   detail: "Beobachtungsfenster startet spätestens sechs Wochen davor",            risk: "—" },
+      { date: "2027-01-01", event: "Neujahrsansprachen",     detail: "Peking und Taipei, liegt mitten im Reisefenster",                      risk: "mittel" },
+      { date: "2027-01-29", event: "Rückflug Taipei → Wien", detail: "Puffer von zwei Tagen vor Arbeitsbeginn einplanen",                    risk: "—" }
+    ],
+
+    // Quellen die der Abruf abklopft
+    sources: [
+      { name: "Taiwan MND — Daily PLA Activity", what: "Flugzeuge + Schiffe rund um Taiwan, bester Einzelindikator", cadence: "täglich ~06:00 UTC+8", url: "https://www.mnd.gov.tw/en/news/plaact/85577" },
+      { name: "NOTAM / Sperrgebiete",            what: "Angekündigte Luftraumsperren, stärkstes Frühsignal",         cadence: "24–72h Vorlauf",     url: "https://www.caa.gov.tw/en/" },
+      { name: "DSCA Major Arms Sales",           what: "US-Waffenverkäufe an der Quelle, vor der Presse",            cadence: "unregelmäßig",       url: "https://www.dsca.mil/press-media/major-arms-sales" },
+      { name: "Focus Taiwan (CNA English)",      what: "Politischer Kontext, Reden, Besuche",                        cadence: "laufend",            url: "https://focustaiwan.tw" },
+      { name: "Taipei Times",                    what: "Innenpolitik, Verteidigungshaushalt",                        cadence: "laufend",            url: "https://www.taipeitimes.com" },
+      { name: "BMEIA Reiseinformation",          what: "Österreichische Warnstufe, härtestes Signal im System",      cadence: "bei Änderung",       url: "https://www.bmeia.gv.at/reise-services/reiseinformation/land/taiwan" },
+      { name: "Auswärtiges Amt",                 what: "Deutsche Warnstufe als Zweitmeinung",                        cadence: "bei Änderung",       url: "https://www.auswaertiges-amt.de/de/service/laender/taiwan-node" }
+    ],
+
+    // Ehrliche Grenze des Dienstes
+    limits: "Der Dienst prognostiziert nichts. Bei Waffenverkäufen und Besuchen siehst du den Auslöser bevor die Reaktion kommt, das ist echter Vorlauf. Bei allem anderen verkürzt er nur die Reaktionszeit von zufällig Nachrichten lesen auf am Morgen wissen. Die eigentliche Absicherung bleibt Umbuchungsoption plus Versicherung mit Krisenklausel.",
+
+    reference: "Größter Präzedenzfall Dez 2025: 857 Flüge betroffen, 100.000+ Passagiere verspätet, stärkste Störung 10 Stunden. Flughäfen blieben offen, keine Evakuierung, Alltag lief normal weiter."
+  },
+
+  // ============================================================
+  // seismik — Bebenskala, allgemein + pro Phase
+  // phases-Keys entsprechen phases[].id
+  // ============================================================
+  seismik: {
+    intro: "Taiwan sitzt auf der Kollisionszone Philippinische gegen Eurasische Platte. Beben sind kein Ausnahmefall, sondern Grundrauschen. Das reale Risiko auf der Reise ist der Straßenverkehr, um Größenordnungen vor jedem Beben.",
+
+    facts: [
+      { value: "15.000–18.000", label: "registrierte Beben pro Jahr" },
+      { value: "~1.000",        label: "davon spürbar" },
+      { value: "2–3",           label: "Magnitude 6+ pro Jahr" },
+      { value: "alle 5–10 J.",  label: "Magnitude 7+" },
+      { value: "30–40 %",       label: "M6+ irgendwo in Taiwan im 59-Tage-Fenster" },
+      { value: "5–30 Sek.",     label: "Vorwarnung durch nationales Frühwarnsystem" }
+    ],
+
+    context: "Chi-Chi 1999, M7.7, 2.400 Tote. Danach wurden die Baunormen komplett überarbeitet. Hualien April 2024, M7.4, fast identische Energie: 18 Tote, die meisten durch Steinschlag auf einer Bergstraße, nicht in Gebäuden. Erdbebentote seit 2000 rund 100 insgesamt bei 23 Mio. Einwohnern. Verkehrstote pro Jahr rund 3.000.",
+
+    // Skala — Regionalrisiko, nicht Magnitude
+    scale: [
+      { key: "niedrig", icon: "▁",    label: "Niedrig", color: "#4a9e4a",
+        meaning: "Abseits aktiver Störungen. Beben werden gespürt, Schäden praktisch ausgeschlossen." },
+      { key: "mittel",  icon: "▃",    label: "Mittel",  color: "#e8c547",
+        meaning: "Spürbare Beben regelmäßig. Moderne Bauten sicher, Altbau und weicher Untergrund als einziger Faktor." },
+      { key: "erhoeht", icon: "▅",    label: "Erhöht",  color: "#F59E0B",
+        meaning: "Aktive Zone oder Bergterrain. Hauptgefahr ist nicht das Gebäude, sondern Steinschlag und Straßensperren." },
+      { key: "hoch",    icon: "▇",    label: "Hoch",    color: "#EF4444",
+        meaning: "Plattengrenze direkt darunter. Starke Beben wahrscheinlich spürbar, Infrastruktur kann tageweise ausfallen." }
+    ],
+
+    // Risiko pro Reisephase
+    phases: {
+      1:  { level: "mittel",  headline: "Taipei-Becken verstärkt",
+            note: "Weiche Sedimente im Becken verstärken Erschütterungen, Beben aus dem Osten werden deutlich gespürt. Bausubstanz nach 2000 unkritisch. U-Bahn stoppt bei Beben automatisch und fährt nach Prüfung weiter." },
+      2:  { level: "hoch",    headline: "Plattengrenze direkt darunter",
+            note: "Epizentrum M7.4 April 2024, M6.4 Februar 2018. Gebäude sind das kleinere Problem, Bergstraßen das größere. Taroko-Schlucht seit 2024 teilweise gesperrt, Status vor Buchung prüfen." },
+      3:  { level: "hoch",    headline: "Longitudinal Valley Fault",
+            note: "Das Tal ist die Störungszone selbst, kriecht messbar mehrere Zentimeter pro Jahr. September 2022 M6.8 Chishang mit eingestürzter Brücke und unterbrochener Bahnstrecke. Flaches Terrain, kein Steinschlag." },
+      4:  { level: "hoch",    headline: "Guanshan-Chishang-Serie",
+            note: "September 2022 Doppelschlag M6.6 und M6.8. Bahn und Straßen nach Norden können tageweise ausfallen. Ausweichen über Süden möglich, Puffertag bei Weiterreise einplanen." },
+      5:  { level: "niedrig", headline: "Korallenkalk-Insel, ruhig",
+            note: "Abseits der aktiven Störungen, geringste Seismik der ganzen Route. Der einzige Ausfallgrund hier ist Wind und Seegang beim Fährbetrieb, nicht Beben." },
+      6:  { level: "mittel",  headline: "Hengchun offshore",
+            note: "Dezember 2006 M7.0 vor der Küste, kappte damals Unterseekabel und legte das halbe asiatische Internet lahm. An Land geringe Schäden. Bei starkem Beben direkt am Strand: Küste verlassen, Tsunami-Vorlauf wären 15–30 Minuten." },
+      7:  { level: "mittel",  headline: "Meinong 2016, weicher Untergrund",
+            note: "M6.4 mit 117 Toten, fast alle in einem einzigen Gebäude mit Baumängeln. Alluvialboden neigt zu Bodenverflüssigung. Unterkunft nach 2000 gebaut buchen, das löst den Punkt vollständig." },
+      8:  { level: "erhoeht", headline: "Bergstraße als Schwachpunkt",
+            note: "Chiayi liegt am Rand der Chi-Chi-Zone. Gefahr ist die Zufahrt: Tai-18 und die Waldbahn reagieren empfindlich auf Steinschlag. Nach einem starken Beben Status prüfen bevor ihr hochfahrt." },
+      9:  { level: "erhoeht", headline: "Chi-Chi-Epizentrum nebenan",
+            note: "Jiji liegt rund 20 km entfernt, Epizentrum von 1999. Region seither durchsaniert. Hangrutschungen an den Seestraßen bleiben das Restrisiko in der Regenzeit wie nach Beben." },
+      10: { level: "mittel",  headline: "wie Phase 1",
+            note: "Taipei-Becken, gleiche Lage wie bei der Ankunft. Relevant hier nur für den Rückflug: Beben können TPE kurzzeitig stoppen, deshalb zwei Tage Puffer vor Arbeitsbeginn." }
+    },
+
+    // Verhalten mit Kleinkind
+    behaviour: [
+      "Beim Check-in einmal den Weg zum Ausgang ansehen. Dauert 30 Sekunden, ersetzt jede Vorbereitung.",
+      "Während des Bebens: Kind zu sich unter Tisch oder Türrahmen, festhalten, drinnen bleiben. Nicht rausrennen, die meisten Verletzungen passieren im Treppenhaus.",
+      "Nach starkem Beben Bergstraßen im Osten meiden. Steinschlag ist die reale Todesursache, nicht einstürzende Häuser.",
+      "Am Strand oder Hafen bei langem starkem Beben: sofort landeinwärts oder hoch. Nicht auf eine Warnung warten.",
+      "Unterkünfte nach 2000 gebaut buchen. Gilt in Taiwan fast automatisch, bei Altstadt-Homestays in Tainan aber aktiv prüfen."
+    ],
+
+    // Warn-Apps
+    apps: [
+      { name: "PWS Cell Broadcast",       what: "Nationales Frühwarnsystem, Alarm kommt automatisch aufs Handy. Kein Setup, keine App, funktioniert auch mit Roaming wenn das Gerät PWS unterstützt.", note: "wichtigster Kanal" },
+      { name: "CWA 地震測報",              what: "Offizielle App der Central Weather Administration. Beben, Taifun, Warnungen.",                                                                          note: "iOS + Android" },
+      { name: "TREM — Taiwan Real-time Earthquake Monitoring", what: "Community-Frühwarnung, oft schneller als offiziell, dafür mit Fehlalarmen.",                                       note: "optional" }
+    ],
+
+    limits: "Regionalrisiko heißt Wahrscheinlichkeit spürbarer Ereignisse, nicht Gefährdung. Selbst in den roten Phasen liegt das persönliche Risiko unter dem des Straßenverkehrs. Die Einstufung dient der Planung von Puffertagen, nicht der Routenauswahl."
   }
 
 };

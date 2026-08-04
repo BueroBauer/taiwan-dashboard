@@ -218,6 +218,10 @@
     if (phase.avgTemp !== undefined && phase.avgTemp !== null) {
       html += '<span class="tl-temp-badge">\uD83C\uDF21\uFE0F ' + phase.avgTemp + '\u00B0C \u00D8</span>';
     }
+    // Bebenrisiko der Phase — Quelle: data.js seismik.phases, Render: sicherheit.js
+    if (window.seismikBadge) {
+      html += window.seismikBadge(phase.id);
+    }
     if (phase.earlyBook) {
       html += '<span class="tl-badge tl-badge--warn">⚠️ Früh buchen!</span>';
     }
@@ -244,6 +248,10 @@
 
     // Body (aufklappbar)
     html += '<div class="tl-card-body" id="' + bodyId + '" hidden>';
+    // Bebenrisiko-Zeile — Detail zur Phase, Volltext in Section Sicherheit
+    if (window.seismikPhaseRow) {
+      html += window.seismikPhaseRow(phase.id);
+    }
     if (phase.days && phase.days.length > 0) {
       phase.days.forEach(function(dayObj) {
         html += renderDay(dayObj, phase.id);
@@ -301,6 +309,7 @@
     if (window.restaurantsModule) { window.restaurantsModule.init(); }
     if (window.bookingModule)     { window.bookingModule.init(); }
     if (window.faqModule)         { window.faqModule.init(); }
+    if (window.sicherheitModule)  { window.sicherheitModule.init(); }
     renderTimeline();
   });
 

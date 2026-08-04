@@ -1236,3 +1236,119 @@ section.section:last-child {
 .faq-question { color: var(--text); font-size: 0.9rem; font-weight: 500; line-height: 1.4; }
 .faq-tip      { color: var(--muted); font-size: 0.78rem; line-height: 1.4; }
 .faq-answer   { color: #22C55E; font-size: 0.82rem; line-height: 1.4; }
+
+/* ============================================================
+   Sicherheit — Warndienst + Bebenskala (sicherheit.js)
+   ============================================================ */
+
+.sec-block { margin-bottom: 2.5rem; }
+.sec-block-title { font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+.sec-block-intro { color: var(--muted); font-size: 0.86rem; line-height: 1.5; margin-bottom: 1.25rem; max-width: 62ch; }
+.sec-block-intro code { background: var(--border); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.8rem; }
+.sec-sub { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 1.75rem 0 0.75rem; }
+.sec-limit { margin-top: 1.5rem; padding: 0.9rem 1rem; background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--muted); border-radius: var(--radius); color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
+.sec-limit strong { color: var(--text); }
+.sec-limit--ref { border-left-color: var(--accent); }
+.sec-context { margin-top: 1rem; color: var(--muted); font-size: 0.84rem; line-height: 1.6; max-width: 78ch; }
+
+/* Warndienst — Statuskarte */
+.wd-status { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--lvl); border-radius: var(--radius); padding: 1.15rem 1.25rem; }
+.wd-status-main { display: flex; align-items: center; gap: 0.85rem; }
+.wd-status-icon { font-size: 1.75rem; line-height: 1; }
+.wd-status-label { font-size: 1.05rem; font-weight: 700; color: var(--lvl); }
+.wd-status-date { font-size: 0.78rem; color: var(--muted); }
+.wd-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin: 1.1rem 0 0.9rem; }
+.wd-metric { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 10px; padding: 0.6rem 0.7rem; display: flex; flex-direction: column; gap: 0.15rem; }
+.wd-metric-value { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.wd-metric-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.wd-note { font-size: 0.83rem; color: var(--text); line-height: 1.5; }
+.wd-note--muted { color: var(--muted); font-size: 0.78rem; margin-top: 0.3rem; }
+
+/* Warndienst — Referenzband */
+.wd-band { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.5rem; }
+.wd-band-item { border: 1px solid var(--border); border-top: 3px solid var(--lvl); border-radius: 8px; padding: 0.55rem 0.65rem; background: var(--card); }
+.wd-band-range { display: block; font-size: 0.88rem; font-weight: 700; color: var(--text); }
+.wd-band-label { display: block; font-size: 0.72rem; color: var(--lvl); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Warndienst — Stufen */
+.wd-levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.65rem; }
+.wd-level { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--lvl); border-radius: var(--radius); padding: 0.8rem 0.9rem; opacity: 0.65; }
+.wd-level--active { opacity: 1; box-shadow: 0 0 0 1px var(--lvl) inset; }
+.wd-level-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: var(--text); margin-bottom: 0.35rem; }
+.wd-level-now { margin-left: auto; font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--lvl); border: 1px solid var(--lvl); border-radius: 999px; padding: 0.08rem 0.4rem; }
+.wd-level-trigger { font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
+.wd-level-action { font-size: 0.78rem; color: var(--text); line-height: 1.45; margin-top: 0.4rem; }
+
+/* Warndienst — Trigger */
+.wd-triggers { display: grid; gap: 0.65rem; }
+.wd-trigger { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--yellow); border-radius: var(--radius); padding: 0.85rem 1rem; }
+.wd-trigger-head { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; color: var(--text); font-size: 0.92rem; }
+.wd-chip { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); background: var(--border); border-radius: 999px; padding: 0.12rem 0.45rem; }
+.wd-trigger-detail { font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin-top: 0.35rem; }
+.wd-trigger-window { font-size: 0.74rem; color: var(--yellow); margin-top: 0.4rem; }
+
+/* Warndienst — Kalender */
+.wd-cal { display: grid; gap: 0.35rem; }
+.wd-cal-row { display: grid; grid-template-columns: 96px 1fr auto; gap: 0.75rem; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.6rem 0.8rem; }
+.wd-cal-date { font-size: 0.78rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+.wd-cal-event { display: flex; flex-direction: column; gap: 0.1rem; font-size: 0.85rem; color: var(--text); }
+.wd-cal-event em { font-style: normal; font-size: 0.75rem; color: var(--muted); }
+.wd-cal-risk { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); white-space: nowrap; }
+.wd-cal-row--hoch   { border-left: 3px solid #EF4444; }
+.wd-cal-row--hoch   .wd-cal-risk { color: #FCA5A5; }
+.wd-cal-row--mittel { border-left: 3px solid var(--yellow); }
+.wd-cal-row--mittel .wd-cal-risk { color: #FCD34D; }
+.wd-cal-row--none   { border-left: 3px solid var(--accent); }
+
+/* Warndienst — Quellen */
+.wd-sources { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.55rem; }
+.wd-source { display: flex; flex-direction: column; gap: 0.2rem; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 0.8rem; text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease; }
+.wd-source:hover { border-color: var(--accent); transform: translateY(-1px); }
+.wd-source-name { font-size: 0.84rem; font-weight: 600; color: var(--accent); }
+.wd-source-what { font-size: 0.75rem; color: var(--muted); line-height: 1.4; }
+.wd-source-cadence { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); opacity: 0.75; }
+
+/* Bebenskala — Zahlen */
+.sk-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.55rem; }
+.sk-fact { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 0.8rem; display: flex; flex-direction: column; gap: 0.15rem; }
+.sk-fact-value { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.sk-fact-label { font-size: 0.72rem; color: var(--muted); line-height: 1.35; }
+
+/* Bebenskala — Legende */
+.sk-scale { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.55rem; }
+.sk-scale-item { background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--lvl); border-radius: 10px; padding: 0.7rem 0.8rem; }
+.sk-scale-head { display: flex; align-items: center; gap: 0.45rem; color: var(--text); font-size: 0.9rem; margin-bottom: 0.3rem; }
+.sk-bar { color: var(--lvl); font-size: 1.1rem; line-height: 1; }
+.sk-scale-meaning { font-size: 0.76rem; color: var(--muted); line-height: 1.45; }
+
+/* Bebenskala — pro Phase */
+.sk-phases { display: grid; gap: 0.5rem; }
+.sk-phase { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--phase-color); border-radius: 10px; padding: 0.75rem 0.9rem; }
+.sk-phase-head { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.sk-phase-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.sk-badge { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--lvl); border: 1px solid var(--lvl); border-radius: 999px; padding: 0.1rem 0.45rem; white-space: nowrap; }
+.sk-phase-headline { font-size: 0.8rem; color: var(--lvl); margin-top: 0.25rem; }
+.sk-phase-note { font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin-top: 0.25rem; }
+
+/* Bebenskala — Verhalten + Apps */
+.sk-list { list-style: none; display: grid; gap: 0.4rem; }
+.sk-list li { position: relative; padding-left: 1.1rem; font-size: 0.83rem; color: var(--muted); line-height: 1.5; }
+.sk-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
+.sk-apps { display: grid; gap: 0.5rem; }
+.sk-app { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 0.85rem; }
+.sk-app-head { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; color: var(--text); font-size: 0.87rem; }
+.sk-app-what { font-size: 0.78rem; color: var(--muted); line-height: 1.45; margin-top: 0.25rem; }
+
+/* Timeline — Bebenbadge + Zeile in der Phase */
+.tl-badge--seismik { color: var(--lvl); border: 1px solid var(--lvl); background: transparent; }
+.tl-seismik { margin: 0.85rem 1rem 0; padding: 0.7rem 0.85rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-left: 3px solid var(--lvl); border-radius: 10px; }
+.tl-seismik-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text); flex-wrap: wrap; }
+.tl-seismik-note { font-size: 0.77rem; color: var(--muted); line-height: 1.5; margin-top: 0.3rem; }
+.tl-seismik-link { display: inline-block; margin-top: 0.4rem; font-size: 0.72rem; color: var(--accent); text-decoration: none; }
+.tl-seismik-link:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .wd-cal-row { grid-template-columns: 1fr; gap: 0.25rem; }
+  .wd-cal-risk { text-align: left; }
+  .tl-seismik { margin: 0.75rem 0.85rem 0; }
+}

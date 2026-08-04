@@ -6,6 +6,15 @@ Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Added
+- Section "Sicherheit" (index.html #sicherheit) mit Nav-Eintrag
+- js/sicherheit.js: Rendering Warndienst + Bebenskala, exportiert `window.seismikBadge()` und `window.seismikPhaseRow()`
+- data.js `warndienst`: Ampelstufen, aktueller Stand, Referenzband PLA, offene Trigger, Kalender bis Reiseende, 7 Quellen, Grenzen des Dienstes
+- data.js `seismik`: Kennzahlen, 4-stufige Regionalskala, Risiko für alle 10 Phasen, Verhalten mit Kleinkind, Warnkanäle
+- Timeline-Phasen: Bebenbadge im Header, Bebenzeile mit Detail im aufgeklappten Body
+- Hero-Statleiste: Ampelstatus des Warndienstes, verlinkt auf #sicherheit
+- CSS-Block für Warndienst, Bebenskala und Timeline-Bebenzeile
+
 ## [0.1.0] - 2026-07-31
 
 ### Added
